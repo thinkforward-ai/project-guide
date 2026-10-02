@@ -16,7 +16,7 @@ Initialization sources the goal and requirements from input files, so it can't b
 
 ### Context
 
-`problem-description.md` section 5: input is a goal plus input files with requirements.
+`overview.md` section 5: input is a goal plus input files with requirements.
 
 ### Resolution Points
 
@@ -36,7 +36,7 @@ Expertise decides whether input counts as opinion or expert opinion, and who can
 
 ### Context
 
-`problem-description.md` sections 3 and 8. Example biases: a PM leans towards fast and cheap at the cost of quality or security, and a backend engineer leans towards over-engineering.
+`overview.md` sections 3 and 8. Example biases: a PM leans towards fast and cheap at the cost of quality or security, and a backend engineer leans towards over-engineering.
 
 ### Resolution Points
 
@@ -59,7 +59,7 @@ This decides how reliable and how automated the "under research" stage is, and w
 
 ### Context
 
-`problem-description.md` section 8: every input is classified, checked for bias, validated against settled knowledge, and checked for contradictions.
+`overview.md` section 8: every input is classified, checked for bias, validated against settled knowledge, and checked for contradictions.
 
 ### Resolution Points
 
@@ -79,7 +79,7 @@ Input is validated against settled facts and decisions, so an unclear notion of 
 
 ### Context
 
-`problem-description.md` section 8: a fact is something objectively true.
+`overview.md` section 8: a fact is something objectively true.
 
 ### Resolution Points
 
@@ -102,7 +102,7 @@ Contributors work remotely and need shared, persistent access, and the framework
 
 ### Context
 
-`problem-description.md` section 4.
+`overview.md` section 4.
 
 ### Resolution Points
 
@@ -122,7 +122,7 @@ Teams need to see what is still unknown and when research is ready for implement
 
 ### Context
 
-`problem-description.md` sections 6 and 9: research is finished when no open questions block implementation.
+`overview.md` sections 6 and 9: research is finished when no open questions block implementation.
 
 ### Resolution Points
 
@@ -175,7 +175,7 @@ Initial trigger map:
 2. `open-question`: a new gap, blocker, unknown or contradiction is found anywhere. Done when it is registered. Next: research of that question.
 3. Research and input handling (skill not yet defined): a question is picked up, or a contributor provides input on it. Each input is classified, bias-tagged and checked; a contradiction triggers `open-question`. Done when the required expertise has weighed in, no contradictions are open and every resolution point is addressed. Next: `make-decision`.
 4. `make-decision`: a question is ready to decide, or a contributor asks to decide it. Done when the decision record is accepted. Next: apply it.
-5. Apply (currently inside `make-decision`): a decision is accepted. Done when affected documents, including the problem description, are updated. Next: newly revealed questions go to `open-question`; otherwise back to the orchestrator.
+5. Apply (currently inside `make-decision`): a decision is accepted. Done when affected documents, including `overview.md`, are updated. Next: newly revealed questions go to `open-question`; otherwise back to the orchestrator.
 6. Completion check: no open questions block implementation. Next: hand off to optional domain execution packs.
 7. Orchestrator: a session starts in an existing project, a contributor joins, or someone asks for status or what's next.
 
