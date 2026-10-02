@@ -16,6 +16,7 @@ A shared framework, not tied to any one tool, that takes a goal and works it int
 1. Several contributors, each holding at least one role.
 2. Each role carries expertise areas, experience and background. Those decide whose input counts as expert on which topic.
 3. Each role also carries known biases. For example, a PM may lean towards fast and cheap at the cost of quality or security. A backend engineer may lean towards over-engineering.
+4. The framework is AI-inclusive: any contributor, role holder or expertise holder can be a human or an AI agent.
 
 ## 4. Shared, Persistent Storage
 
@@ -65,10 +66,4 @@ Every piece of input that comes in is processed like this:
 
 ## 10. Still Open
 
-1. How the input files are organized.
-2. How roles, expertise and biases are defined: a fixed catalogue, or set per project.
-3. Who or what classifies input and detects bias and contradictions: an agent, a human, or both.
-4. How "fact" is established. Who certifies it, and can a decision later overturn it?
-5. How the storage layer is abstracted so it works on Git, a wiki and Docs alike.
-6. How done-ness and progress through the fog of war are measured or shown.
-7. Project name and skill prefix. Current working candidate: `project-guide`, with a short prefix such as `pg-` (for example `pg-init`, `pg-question`, `pg-decide`; domain packs as `pg-it-*`, `pg-health-*`).
+Unresolved points are tracked in [open-questions.md](open-questions.md).

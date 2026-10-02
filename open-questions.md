@@ -2,7 +2,7 @@
 
 This file contains only unresolved questions that currently require investigation or a decision.
 
-**Next question ID:** Q8
+**Next question ID:** Q9
 
 ## Q1: Input file organization
 
@@ -152,3 +152,41 @@ The repository is `thinkforward-ai/project-guide`. Working candidate prefix: `pg
 - ❓ **Skill prefix**
   - **Resolution:** Pending
   - **Details:** `pg-` or an alternative, including domain-pack naming.
+
+## Q8: Phase orchestration and transitions
+
+### Question
+
+How are phases triggered and handed off, and does the framework need an orchestrator skill that routes contributors to the right phase skill?
+
+### Why It Matters
+
+Contributors, human or AI, join at any time and need one way in. Questions are at different stages at once, so transitions must be consistent across agents and tools.
+
+### Context
+
+Working direction: a thin orchestrator that reads project state from shared storage and routes to phase skills, without doing their work. Each phase skill declares its own trigger, done condition and next step, and still works when called directly.
+
+### Proposals
+
+Initial trigger map:
+
+1. `start-new-project`: someone brings a new goal or idea and no project structure exists. Done when input is saved, the basic description is confirmed and gaps are registered. Next: the orchestrator picks the first question.
+2. `open-question`: a new gap, blocker, unknown or contradiction is found anywhere. Done when it is registered. Next: research of that question.
+3. Research and input handling (skill not yet defined): a question is picked up, or a contributor provides input on it. Each input is classified, bias-tagged and checked; a contradiction triggers `open-question`. Done when the required expertise has weighed in, no contradictions are open and every resolution point is addressed. Next: `make-decision`.
+4. `make-decision`: a question is ready to decide, or a contributor asks to decide it. Done when the decision record is accepted. Next: apply it.
+5. Apply (currently inside `make-decision`): a decision is accepted. Done when affected documents, including the problem description, are updated. Next: newly revealed questions go to `open-question`; otherwise back to the orchestrator.
+6. Completion check: no open questions block implementation. Next: hand off to optional domain execution packs.
+7. Orchestrator: a session starts in an existing project, a contributor joins, or someone asks for status or what's next.
+
+### Resolution Points
+
+- ❓ **Trigger metadata format**
+  - **Resolution:** Pending
+  - **Details:** How each skill declares its entry trigger, done condition and next step in its header.
+- ❓ **Question stage storage**
+  - **Resolution:** Pending
+  - **Details:** A stage field in `open-questions.md`, or location such as a file or folder per stage.
+- ❓ **Suggest or invoke**
+  - **Resolution:** Pending
+  - **Details:** Whether the orchestrator only suggests the next skill or calls it automatically, especially for AI participants.
