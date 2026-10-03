@@ -59,7 +59,10 @@ block progress or require a user-facing recitation.
    **provide input or an idea**, or **pause**. Show full status only when
    requested or chosen: current understanding, issues and blockers,
    reviewed proposals, accepted decisions, and executable tasks. If several
-   issues or tasks could be the focus, ask the user to choose.
+   issues or tasks could be the focus, ask the user to choose. After showing
+   status, offer the applicable choices again. Continue offering applicable
+   choices after non-phase actions until the user pauses or a phase handoff
+   begins.
 4. Follow the chosen action's trigger: a new goal without structure needs
    bootstrap; a new issue needs registration; an explicitly selected
    issue needs refinement; reviewed proposals can be compared without
@@ -80,9 +83,9 @@ block progress or require a user-facing recitation.
 
 ## Exit Gate
 
-The user has received the requested status, chosen to pause, or a
-phase-skill handoff has been verified against its exit gate. Do not claim
-that an uninvoked skill ran or that an unapproved decision was accepted.
+The user has chosen to pause, or a phase-skill handoff has been verified
+against its exit gate. Do not claim that an uninvoked skill ran or that an
+unapproved decision was accepted.
 
 ## Transition
 
