@@ -6,7 +6,7 @@ A shared framework, not tied to any one tool, that takes a goal and works it int
 
 ## 2. Scope
 
-1. **Core (shared by every domain):** discovery, meaning research, design and planning. It covers starting a project, roles and expertise, open questions, handling input (classification, bias, contradictions), decisions, and updating documents.
+1. **Core (shared by every domain):** discovery, meaning research, design and planning. It covers starting a project, roles and expertise, open issues, refining meaning and requirements, handling input (classification, bias, contradictions), decisions, updating documents, and preparing tasks.
 2. **Execution (optional, domain-specific):** some projects stay pure research (for example, science). Others move quickly into implementation (for example, agile IT projects).
 3. **Domain packs:** what "implement" means differs by domain. In IT it means delivering tested code. In health care it can mean carrying out a patient's treatment, which is more physical and takes longer. Later, as the framework spreads, teams from each domain contribute their own skill sets for implementing tasks and decisions on top of the core.
 4. **Out of scope for now:** designing execution skills. The core comes first.
@@ -25,21 +25,23 @@ A shared framework, not tied to any one tool, that takes a goal and works it int
 
 ## 5. Starting a Research Effort
 
-1. Input: a goal plus input files with requirements. How those files are organized is still to be defined.
-2. Output: the research structure. That means a project description, the goal definition, constraints, and the first blockers and open questions.
+1. Input: a stated idea or goal and any available input files. How those files are organized is still to be defined.
+2. `start-project` creates the shared structure, preserves supplied input, records the idea without treating it as settled, and registers the first issue about the project's goal. Clarifying the goal and requirements belongs to refinement.
 
 ## 6. Breaking Problems Down, Layer by Layer
 
 1. It starts with a few broad problems.
 2. Each one splits into smaller problems, and each smaller problem is tagged with the expertise needed to resolve it.
-3. Resolving problems reveals the next layer of questions. This is the "fog of war": the map is explored until everything needed for implementation is described, including risks and dependencies.
+3. Resolving issues reveals the next layer of issues. This is the "fog of war": the map is explored until everything needed for implementation is described, including risks and dependencies.
 
-## 7. Lifecycle of a Question
+## 7. Lifecycle of an Issue
 
-1. **Registered:** a problem, question or blocker is recorded. Today's `open-question` skill does this.
-2. **Under research:** an important stage that is mostly missing today. It means gathering information, thinking, and contributors exchanging opinions.
-3. **Decided:** an expert resolves it with reasons, and it becomes a decision record. Today's `make-decision` skill does this.
-4. **Applied:** after the decision, every affected research document is updated to show current understanding and status.
+1. **Registered:** the initial project issue or a newly discovered issue is recorded. `raise-issue` registers later issues without analyzing them. After registration, the user chooses whether to refine now or leave the issue open for later.
+2. **Refined:** `refine` clarifies meaning and requirements, examines inputs, and develops one or more reviewable proposals without choosing one. It may reveal smaller issues, which are registered separately. This loop can run across several issues at once.
+3. **Decided:** when proposals and relevant blockers are ready, `decide` asks for explicit acceptance of one solution and records it as an immutable decision. Without acceptance the issue remains open.
+4. **Applied:** affected project understanding is updated. Actionable consequences become reviewed, decision-linked tasks under `tasks/` only when the [executable task handoff](decisions/20261003-1541-executable-task-handoff.md) is fully specified and unblocked. Consequences needing further design remain issues. Scheduling and execution are separate and may happen while unrelated issues remain open.
+
+The [lifecycle orchestrator decision](decisions/20261003-1603-project-lifecycle-orchestration.md) defines `work-on-project` as the entry point that reads project state, presents the complete pipeline and contextual next actions, and coordinates phase skills only through their triggers and gates. On opening or resuming any project, it proposes a project-specific translation to the current layout and obtains approval before changing existing material. On resumption, showing current status is an option, not an automatic report. Phase skills also work directly and use a consistent Trigger, Entry Gate, Work, Exit Gate, and Transition contract. The [shared vocabulary decision](decisions/20261003-1525-shared-vocabulary-and-orchestrator-preflight.md) calls for an optional glossary skill: when installed, the orchestrator checks its terms internally before routing, but its absence does not block progress.
 
 ## 8. Handling Input During Research
 
@@ -51,10 +53,12 @@ Every piece of input that comes in is processed like this:
    3. Fact: something objectively true.
 2. **Checked for bias:** the contributor's likely bias, based on their role, is flagged and noted on the input.
 3. **Validated** against what's already settled (facts and decisions) and compared with other inputs on the same topic.
-4. **Checked for contradictions:** any contradiction found must always be surfaced. It then becomes a new blocker or open question that needs the relevant expertise.
+4. **Checked for contradictions:** any contradiction found must always be surfaced. It then becomes a new issue that needs the relevant expertise.
 5. **Kept for the record:**
    1. Non-expert opinions are never thrown away. They stay attached to the problem they're about, so there's a full history.
    2. They're also input for the expert, who must explicitly accept or reject each one and give the reason.
+
+The detailed responsibility split for this processing is still an open question; the refinement skill does not certify facts or infer expertise.
 
 ## 9. Guarantees the Framework Aims For
 
@@ -62,8 +66,8 @@ Every piece of input that comes in is processed like this:
 2. Contradictions can't slip through silently.
 3. Expertise is weighed explicitly, and bias is visible rather than hidden.
 4. Research documents always reflect the latest settled knowledge.
-5. Research is finished when there are no open questions left that block implementation.
+5. A particular task can be ready while other issues remain open. Project-wide research is finished when no open issues block the intended implementation.
 
 ## 10. Still Open
 
-Unresolved points are tracked in [open-questions.md](open-questions.md).
+Unresolved issues are tracked in [open-issues.md](open-issues.md).
