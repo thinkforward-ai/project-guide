@@ -44,11 +44,11 @@ layout alignment before changing its issues.
    overview only with understanding already settled.
 5. Offer **Review proposals / Continue refinement / Pause**. When the
    user chooses review, present the proposals in the Proposal Format,
-   then the remaining uncertainty.
-   Ask whether they are ready for a later decision or need revision;
-   record the confirmation with the open issue. Do not select a
-   winner, mark resolution points accepted, create a decision record, or
-   create tasks.
+   then the remaining uncertainty. Ask the user to choose a proposal,
+   request revision, or pause. A choice confirms readiness and hands
+   the chosen proposal to the decision phase; record the confirmation
+   with the open issue. Do not mark resolution points accepted, create
+   a decision record, or create tasks.
 
 ## Proposal Format
 
