@@ -17,27 +17,54 @@ for alignment before continuing with its issues.
 ## Entry Gate
 
 Capture the user's idea as stated, or ask for it if missing. Show the proposed
-first issue about the project's meaning and goal; confirm it before creating
-the structure. Do not treat a provisional goal as a settled requirement.
+first issue about the project's meaning, goal, and collaboration mode (solo,
+team, or organization), and a roadmap issue about the project's milestones;
+confirm both before creating the structure. Do not treat a provisional goal as a settled requirement.
 
 ## Work
 
-1. Create `README.md`, `AGENTS.md`, `overview.md`, `open-issues.md`, and
-   directories for `inputs/`, `decisions/`, and `tasks/` without overwriting
+1. Create `README.md`, `AGENTS.md`, `overview.md`, `roadmap.md`,
+   `open-issues.md`, and directories for `inputs/`, `decisions/`, and `tasks/` without overwriting
    existing material. Preserve provided input files unchanged.
 2. Put the user's original idea in the first issue's context. Initialize
-   `overview.md` with the goal, context, scope, constraints, and contributing
-   roles marked unresolved, referring to the first issue rather than
-   presenting guesses as settled facts.
-3. Register the confirmed first issue in `open-issues.md` using the
-   project's issue format. Keep `AGENTS.md` about the project structure and
+   `overview.md` with the goal, context, scope, constraints, and a
+   Collaboration section (mode and contributors) marked unresolved,
+   referring to the first issue rather than presenting guesses as settled
+   facts. If the user already stated the mode, record it. Initialize
+   `roadmap.md` in the Roadmap Format with no milestones yet, referring
+   to the roadmap issue.
+3. Register the confirmed first issue and roadmap issue in
+   `open-issues.md` using the project's issue format. Keep `AGENTS.md` about the project structure and
    `README.md` as its entry point.
+
+## Roadmap Format
+
+```md
+# Roadmap
+
+The journey toward the goal in [overview.md](overview.md).
+
+## M<n>: <Milestone name>
+
+**Intent:** <why it matters>
+
+**Done when:**
+
+- ❓ <observable criterion>
+
+**Progress:**
+
+- YYYY-MM-DD: <what was done>
+```
+
+Milestones appear in intended order. Achieved or cancelled milestones
+stay listed and say so under their heading.
 
 ## Exit Gate
 
-The structure exists, the first issue is registered, and the user's
-next-step choice is known. No interview, proposal, decision, or task
-is required.
+The structure exists, the first issue and roadmap issue are registered,
+and the user's next-step choice is known. No interview, proposal,
+decision, or task is required.
 
 ## Transition
 

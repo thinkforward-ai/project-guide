@@ -31,7 +31,8 @@ block progress or require a user-facing recitation.
 
 1. On opening or resuming any existing project, compare its actual artifacts
    with the current Project Guide layout (`README.md`, `AGENTS.md`,
-   `overview.md`, `open-issues.md`, `inputs/`, `decisions/`, and `tasks/`).
+   `overview.md`, `roadmap.md`, `open-issues.md`, `inputs/`, `decisions/`,
+   and `tasks/`).
    Do not assume its layout is an older Project Guide version. If alignment
    is needed, propose a project-specific source-to-target translation,
    including planned file changes, content mapping, conflicts, and anything
@@ -51,13 +52,21 @@ block progress or require a user-facing recitation.
    an approved alignment, re-read affected records.
    Use the records and explicit user confirmations to see which issues are
    open and which proposals were reviewed; do not invent a stage field,
-   a completion percentage, or an approval.
+   a completion percentage, or an approval. Keep the roadmap current: for
+   each decision or completed task since the last progress entry, add a
+   one-line entry to any milestone it moves or relates to and mark the
+   criteria it satisfies `✅`. When all criteria of a milestone are met,
+   it is achieved and the next one becomes current. Changing milestones
+   needs a decision, not this step.
 3. If the user requested status, show it directly. Otherwise, if the user
    has not named an action, offer only applicable choices:
    **show current status** first, **refine an open issue**, **review
    proposals**, **decide a reviewed issue**, **work on a ready task**,
    **provide input or an idea**, or **pause**. Show full status only when
-   requested or chosen: current understanding, issues and blockers,
+   requested or chosen: roadmap **Current focus** (the current milestone
+   in full) and **Next** (name and one-line intent, never later
+   milestones; say so if no roadmap exists), current understanding,
+   issues and blockers,
    reviewed proposals, accepted decisions, and executable tasks. If several
    issues or tasks could be the focus, ask the user to choose. After showing
    status, offer the applicable choices again. Continue offering applicable

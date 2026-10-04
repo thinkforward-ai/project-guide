@@ -23,7 +23,9 @@ Use when:
 
 ## Entry Gate
 
-The issue must be unresolved rather than a routine task.
+The issue must be unresolved rather than a routine task. A small
+clarification of an issue under discussion belongs to that issue, not a
+new one.
 Check for duplicates and accepted decisions before registering it; ask
 only when missing information prevents a clear record. A user-confirmed
 follow-up issue may be registered, but never infer that confirmation.

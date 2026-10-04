@@ -13,7 +13,7 @@ A shared framework, not tied to any one tool, that takes a goal and works it int
 
 ## 3. Who Takes Part
 
-1. Several contributors, each holding at least one role.
+1. One or more contributors, each holding at least one role. The overview states the project's collaboration mode: solo (one person), team (several contributors), or organization (a group of teams). Solo projects use no roles and no decision attribution.
 2. Each role carries expertise areas, experience and background. Those decide whose input counts as expert on which topic.
 3. Each role also carries known biases. For example, a PM may lean towards fast and cheap at the cost of quality or security. A backend engineer may lean towards over-engineering.
 4. The framework is AI-inclusive: any contributor, role holder or expertise holder can be a human or an AI agent.
@@ -26,7 +26,7 @@ A shared framework, not tied to any one tool, that takes a goal and works it int
 ## 5. Starting a Research Effort
 
 1. Input: a stated idea or goal and any available input files. How those files are organized is still to be defined.
-2. `start-project` creates the shared structure, preserves supplied input, records the idea without treating it as settled, and registers the first issue about the project's goal. Clarifying the goal and requirements belongs to refinement.
+2. `start-project` creates the shared structure, preserves supplied input, records the idea without treating it as settled, and registers the first issue about the project's goal and collaboration mode, and a roadmap issue. Clarifying the goal and requirements belongs to refinement.
 
 ## 6. Breaking Problems Down, Layer by Layer
 

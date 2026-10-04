@@ -31,11 +31,15 @@ before changing its issues.
    and compare them against the issue's constraints, evidence, risks,
    and dissent. A sole proposal still needs explicit acceptance.
    If none is acceptable, return to refinement.
-2. State the exact choice and its consequences. Confirm all resolution
+2. Validate the choice against known facts, accepted decisions, the
+   overview, and open issues. Show every conflict with its source and ask
+   the user to resolve each one explicitly before acceptance.
+3. State the exact choice and its consequences. Confirm all resolution
    points with the user; mark each `✅` with a `Resolution` and `Details`
    only after confirmation. Keep unconfirmed points `❓` and the issue
-   open. Confirm the accepting individual's full name and role; never infer.
-3. Show the final decision wording and confirm that the entire issue is
+   open. In team or organization mode, confirm the accepting individual's
+   full name and role; never infer. In solo mode, record no attribution.
+4. Show the final decision wording and confirm that the entire issue is
    ready to resolve. At this decision gate, always offer **Approve / Revise /
    Pause**: Approve accepts the whole decision, Revise returns to refinement,
    and Pause leaves the issue open without a new decision. Approval of one
@@ -46,7 +50,8 @@ before changing its issues.
 
 1. At acceptance, use the current UTC time for
    `decisions/<yyyymmdd-hhmm>-<unique-title>.md`. Create one immutable
-   record per decision with the following structure:
+   record per decision with the following structure (omit the
+   `Accepted by` line in solo mode):
 
    ```md
    # <Decision title>

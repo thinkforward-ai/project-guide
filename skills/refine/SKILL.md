@@ -32,9 +32,13 @@ layout alignment before changing its issues.
    with contributors. Distinguish facts, opinions, and proposals; record
    sources, uncertainty, and contradictions without inventing certainty.
    Do not settle unresolved rules for classifying input or authority.
-3. When a new independent gap or contradiction appears, propose registering
-   it as another open issue. Keep its relationship to the parent in the
-   issue context; do not silently choose a solution for either.
+3. When a question arises, judge its size. A small question that
+   clarifies the current issue stays with it and is resolved as part
+   of its decision. A question big enough to start its own discussion,
+   or a new independent gap or contradiction, is proposed for
+   registration as another open issue. Keep its relationship to the
+   parent in the issue context; do not silently choose a solution for
+   either.
 4. Develop one or more distinct proposals in the Proposal Format. Keep
    concise findings and proposals with the open issue. Update the
    overview only with understanding already settled.

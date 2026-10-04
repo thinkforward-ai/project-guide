@@ -36,7 +36,7 @@ Expertise decides whether input counts as opinion or expert opinion, and who can
 
 ### Context
 
-`overview.md` sections 3 and 8. Example biases: a PM leans towards fast and cheap at the cost of quality or security, and a backend engineer leans towards over-engineering.
+`overview.md` sections 3 and 8. Solo collaboration mode uses no roles (founder input, 2026-10-04; `overview.md` section 3 and the glossary). Example biases: a PM leans towards fast and cheap at the cost of quality or security, and a backend engineer leans towards over-engineering.
 
 ### Resolution Points
 
