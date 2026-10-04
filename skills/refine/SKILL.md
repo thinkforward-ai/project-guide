@@ -69,6 +69,10 @@ by number. Do not use tables.
 Whenever asking for review or a choice, show every proposal in full;
 never refer to proposals only by name, number, or summary.
 
+## AI-driven mode
+
+Drive the refinement. Request missing information from the stakeholder and contributors. Ask the stakeholder about anything in their interest, including how to do the work, with your recommendation when available. Decide yourself when proposals are ready and state why.
+
 ## Exit Gate
 
 Proposals are recorded with the open issue, relevant blockers are

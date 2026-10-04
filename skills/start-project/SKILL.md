@@ -21,9 +21,9 @@ for alignment before continuing with its issues.
 ## Entry Gate
 
 Capture the user's idea as stated, or ask for it if missing. Show the proposed
-first issue about the project's meaning, goal, and collaboration mode (solo,
-team, or organization), and a roadmap issue about the project's milestones;
-confirm both before creating the structure. Do not treat a provisional goal as a settled requirement.
+first issue about the project's meaning, goal, collaboration mode (solo,
+team, or organization), and driving mode (AI-driven or user-driven), and a
+roadmap issue about the project's milestones; confirm both before creating the structure. Do not treat a provisional goal as a settled requirement.
 
 ## Work
 
@@ -32,10 +32,10 @@ confirm both before creating the structure. Do not treat a provisional goal as a
    existing material. Preserve provided input files unchanged.
 2. Put the user's original idea in the first issue's context. Initialize
    `overview.md` with the goal, context, scope, constraints, and a
-   Collaboration section (mode and contributors) marked unresolved,
-   referring to the first issue rather than presenting guesses as settled
-   facts. If the user already stated the mode, record it. Initialize
-   `roadmap.md` in the Roadmap Format with no milestones yet, referring
+   Collaboration section (mode, `**Driving:**`, and contributors) marked
+   unresolved, referring to the first issue rather than presenting guesses
+   as settled facts. If the user already stated the mode or driving mode,
+   record it. Initialize `roadmap.md` in the Roadmap Format with no milestones yet, referring
    to the roadmap issue.
 3. Register the confirmed first issue and roadmap issue in
    `open-issues.md` using the project's issue format. Keep `AGENTS.md` about the project structure and
@@ -63,6 +63,10 @@ The journey toward the goal in [overview.md](overview.md).
 
 Milestones appear in intended order. Achieved or cancelled milestones
 stay listed and say so under their heading.
+
+## AI-driven mode
+
+Decide yourself whether to refine the first issue now and state why. Ask the stakeholder about the goal, requirements, and preferences, with your recommendation when available.
 
 ## Exit Gate
 

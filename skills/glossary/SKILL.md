@@ -30,3 +30,8 @@ source: https://github.com/thinkforward-ai/project-guide
     criteria, and a one-line progress log. It is achieved when all
     criteria are met; adding, replacing, redefining, or cancelling one
     requires a decision.
+15. **AI-driven:** AI, possibly a team of AI roles, runs the lifecycle and
+    passes transition gates. The user, as stakeholder, makes decisions and
+    is asked about anything in their interest, with a recommendation when
+    available.
+16. **User-driven:** The user passes every gate. The default.

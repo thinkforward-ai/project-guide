@@ -107,6 +107,10 @@ before changing its issues.
 3. Creating a task does not assign, schedule, or start it. Execution and
    roadmap scheduling happen only when someone asks for them.
 
+## AI-driven mode
+
+List proposals with your recommendation when available. Only the stakeholder chooses; the gate stays. Review tasks with the stakeholder.
+
 ## Exit Gate
 
 Complete when the decision is recorded and shared, the issue removed,

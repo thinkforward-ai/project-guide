@@ -95,6 +95,10 @@ block progress or require a user-facing recitation.
    Do not execute, schedule, assign, or create tasks here. Scheduling is
    offered only if a PM scheduling capability exists.
 
+## AI-driven mode
+
+Read the driving mode from the overview. Choose the next action yourself, state it and why, and proceed. Show the menu when the stakeholder asks or a stakeholder gate is reached.
+
 ## Exit Gate
 
 The user has chosen to pause, or a phase-skill handoff has been verified

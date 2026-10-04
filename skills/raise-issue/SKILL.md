@@ -115,6 +115,10 @@ Verify: new ID, next ID advanced, coherent issue, no status field, concise/no pl
 Report the created/updated issue ID and title, then offer the transition
 choice below. Do not begin investigating as part of registration.
 
+## AI-driven mode
+
+Register issues you discover without waiting to be asked. Decide yourself whether to refine now or later and state why.
+
 ## Exit Gate
 
 This skill ends after registration and the next-step choice. Do not analyze,
