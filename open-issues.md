@@ -48,7 +48,7 @@ Expertise decides whether input counts as opinion or expert opinion, and who can
   - **Details:** How an issue's required expertise is matched to contributors' roles.
 - ❓ **Stakeholder role**
   - **Resolution:** Pending
-  - **Details:** How the user as stakeholder (requirements, preferences, acceptance) differs from contributors, including AI roles in an AI-driven project (Q12).
+  - **Details:** How the user as stakeholder (requirements, preferences, acceptance) differs from contributors, including AI roles in an AI-driven project (`decisions/20261004-1852-ai-driven-mode.md`).
 
 ## Q3: Who performs input processing
 
