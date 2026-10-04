@@ -9,6 +9,10 @@ source: https://github.com/thinkforward-ai/project-guide
 Develop an open issue into proposals for a decision. Work on the initial
 project issue or a later registered issue; do not decide it.
 
+Be concise: lead with what matters, ask only what is needed now, and
+never repeat content the user has just seen. Proposals are exempt: they
+must carry all information needed to make a decision.
+
 ## Trigger
 
 Use when someone explicitly asks to refine a registered issue, chooses

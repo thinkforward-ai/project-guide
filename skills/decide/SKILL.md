@@ -9,6 +9,10 @@ source: https://github.com/thinkforward-ai/project-guide
 Choose a solution, record it, and hand off actionable work. Do not develop
 proposals or start implementation here.
 
+Be concise: lead with what matters, ask only what is needed now, and
+never repeat content the user has just seen. Proposals are exempt: they
+must carry all information needed to make a decision.
+
 ## Trigger
 
 Use when proposals for a registered issue are ready to be listed for a

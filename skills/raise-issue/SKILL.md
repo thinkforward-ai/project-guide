@@ -12,6 +12,10 @@ source: https://github.com/thinkforward-ai/project-guide
 Register an issue requiring investigation, judgment, verification, or a decision.
 Do not resolve the issue in this skill.
 
+Be concise: lead with what matters, ask only what is needed now, and
+never repeat content the user has just seen. Proposals are exempt: they
+must carry all information needed to make a decision.
+
 ## Trigger
 
 Use when:

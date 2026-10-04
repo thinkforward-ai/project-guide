@@ -8,6 +8,10 @@ source: https://github.com/thinkforward-ai/project-guide
 
 Create a place to refine the user's idea, not a completed project description.
 
+Be concise: lead with what matters, ask only what is needed now, and
+never repeat content the user has just seen. Proposals are exempt: they
+must carry all information needed to make a decision.
+
 ## Trigger
 
 Someone brings a new goal or idea and no project structure exists. If a project

@@ -12,6 +12,10 @@ issues → list proposals and take the user's choice as the decision →
 update understanding and review executable tasks → return to new or
 remaining issues as needed.
 
+Be concise: lead with what matters, ask only what is needed now, and
+never repeat content the user has just seen. Proposals are exempt: they
+must carry all information needed to make a decision.
+
 ## Trigger
 
 Someone brings a new goal, opens, joins or resumes a project, asks for status or
