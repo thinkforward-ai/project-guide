@@ -190,7 +190,7 @@ AI-centric (business-lab glossary): AI drives the work and treats the user as it
 - Lifecycle, records, and gates stay; only who drives changes (founder).
 - The collaboration mode is the existing pattern: stated in the overview, asked at start, changed only by a decision.
 - No accepted decision conflicts: the resume menu (`decisions/20261003-1603-project-lifecycle-orchestration.md`) and "a choice is the decision" (`decisions/20261004-1551-proposal-choice-is-the-decision.md`) both remain.
-- Interim gate split until the ask-or-decide boundary is clear: the AI team passes transition gates (refine now or later, next action, continue refining); decisions and anything in the user's interest, including how to do the work, go to the stakeholder with a recommendation.
+- Interim gate split until the ask-or-decide boundary is clear (founder confirmed, 2026-10-04): the AI team passes transition gates (refine now or later, next action, continue refining); decisions and anything in the user's interest, including how to do the work, go to the stakeholder with a recommendation.
 
 ### Proposals
 
