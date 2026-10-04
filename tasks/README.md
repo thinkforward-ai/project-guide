@@ -5,7 +5,7 @@ to an accepted decision and specifies what, why, how, acceptance criteria,
 prerequisites, and dependencies. Required inputs, access, and environment
 must be available, dependencies complete, and implementation choices settled
 before registration. Keep researchable gaps with an open issue, not under
-`tasks/`. Readiness does not mean assigned, scheduled, or started.
+`tasks/`. Readiness does not mean assigned, scheduled, or started. For edits to existing text, quote the current text and its replacement.
 
 Use this structure for each task:
 

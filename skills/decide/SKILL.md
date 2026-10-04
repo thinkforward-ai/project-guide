@@ -95,7 +95,7 @@ before changing its issues.
    **prerequisites**, and **dependencies**. Use the project's task format
    if present; otherwise use `tasks/<unique-title>.md` with a title, a link
    to the accepted decision, and one section for each of those six fields.
-   Specify exact actions, outputs, scope, and observable checks. Verify
+   Specify exact actions, outputs, scope, and observable checks. For edits to existing text, quote the current text and its replacement. Verify
    prerequisites are available and dependencies complete; use "None" where
    applicable. Do not make the executor resolve an open design choice.
    A decision may yield zero or several tasks; never create one merely to
