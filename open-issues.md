@@ -46,6 +46,9 @@ Expertise decides whether input counts as opinion or expert opinion, and who can
 - ❓ **Role-to-question matching**
   - **Resolution:** Pending
   - **Details:** How an issue's required expertise is matched to contributors' roles.
+- ❓ **Stakeholder role**
+  - **Resolution:** Pending
+  - **Details:** How the user as stakeholder (requirements, preferences, acceptance) differs from contributors, including AI roles in an AI-driven project (Q12).
 
 ## Q3: Who performs input processing
 
@@ -165,7 +168,7 @@ Today the user drives every transition and AI only keeps records and offers neut
 
 ### Context
 
-AI-centric (business-lab glossary): AI drives the work and treats the user as its customer; it asks for everything in the user's interest, including how to do the work, always with a recommendation; the user sets the goal, supplies information, and accepts decisions. The founder expects the lifecycle (issue → research → proposals → decision → implementation), records, and tasks to stay unchanged; only who drives changes. Related: Q2 (roles), the collaboration mode pattern, and the ask-or-decide boundary open as Q14 in `thinkforward-ai/business-lab`.
+AI-centric (business-lab glossary): AI drives the work and treats the user as its customer; it asks for everything in the user's interest, including how to do the work, always with a recommendation; the user sets the goal, supplies information, and accepts decisions. The founder expects the lifecycle (issue → research → proposals → decision → implementation), records, and tasks to stay unchanged; only who drives changes. Related: Q2 (roles; the stakeholder role is defined there), the collaboration mode pattern, and the ask-or-decide boundary open as Q14 in `thinkforward-ai/business-lab`.
 
 ### Resolution Points
 
@@ -181,9 +184,6 @@ AI-centric (business-lab glossary): AI drives the work and treats the user as it
 - ❓ **Gate ownership**
   - **Resolution:** Pending
   - **Details:** Which gates the AI team passes and which go to the stakeholder.
-- ❓ **Stakeholder role**
-  - **Resolution:** Pending
-  - **Details:** How the user as stakeholder differs from contributors.
 
 ### Findings
 
@@ -196,7 +196,7 @@ AI-centric (business-lab glossary): AI drives the work and treats the user as it
 
 **Problem:** Let a project run AI-driven, with AI driving the lifecycle and the user consulted as stakeholder, without changing the workflow or records.
 
-1. **Driving field with per-skill sections:** State `**Driving:** AI-driven | user-driven` in the overview's Collaboration section; absent means user-driven. `start-project` asks it with the collaboration mode; changing it needs a decision. Each phase skill gains an `## AI-driven mode` section with only its differences under the interim gate split. The glossary adds AI-driven, user-driven, and stakeholder.
+1. **Driving field with per-skill sections:** State `**Driving:** AI-driven | user-driven` in the overview's Collaboration section; absent means user-driven. `start-project` asks it with the collaboration mode; changing it needs a decision. Each phase skill gains an `## AI-driven mode` section with only its differences under the interim gate split. The glossary adds AI-driven and user-driven.
    - **Pros:** Follows the collaboration-mode pattern; each skill stays correct when called directly; existing projects are unaffected; a named field allows a hybrid later.
    - **Cons:** Similar text in six skills can drift; the gate split is interim until the boundary is settled.
 2. **Boolean flag with a project-level rule:** State `ai-driven: true|false` in the project's `AGENTS.md`; `start-project` asks it and, when true, writes one AI-driven section there. Skills stay unchanged.
