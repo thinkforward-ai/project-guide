@@ -42,13 +42,10 @@ layout alignment before changing its issues.
 4. Develop one or more distinct proposals in the Proposal Format. Keep
    concise findings and proposals with the open issue. Update the
    overview only with understanding already settled.
-5. Offer **Review proposals / Continue refinement / Pause**. When the
-   user chooses review, present the proposals in the Proposal Format,
-   then the remaining uncertainty. Ask the user to choose a proposal,
-   request revision, or pause. A choice confirms readiness and hands
-   the chosen proposal to the decision phase; record the confirmation
-   with the open issue. Do not mark resolution points accepted, create
-   a decision record, or create tasks.
+5. When proposals are ready to be listed for a choice, hand off to the
+   decision phase; listing proposals belongs to it. Until then, keep
+   discussing without gates. Do not mark resolution points accepted,
+   create a decision record, or create tasks.
 
 ## Proposal Format
 
@@ -70,12 +67,12 @@ never refer to proposals only by name, number, or summary.
 
 ## Exit Gate
 
-The proposals were reviewed, relevant blockers are explicit, and the user
-confirmed they are ready for decision. A single proposal is valid but is
-   not automatically accepted. Continue refinement when revisions are
-requested; Pause leaves the issue open without a decision.
+Proposals are recorded with the open issue, relevant blockers are
+explicit, and they are ready to be listed for a choice. A single proposal
+is valid but is not automatically accepted. Pause leaves the issue open
+without a decision.
 
 ## Transition
 
-When the user asks to choose among the reviewed proposals, hand off to
-the decision phase. Otherwise stop or continue refinement as chosen.
+When proposals are ready, hand off to the decision phase. Otherwise
+stop or continue refinement as chosen.

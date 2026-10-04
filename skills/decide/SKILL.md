@@ -1,6 +1,6 @@
 ---
 name: decide
-description: Choose among reviewed proposals for a registered issue, record an accepted decision, and prepare executable tasks.
+description: List proposals for a registered issue, take the user's choice as the decision, record it, and prepare executable tasks.
 source: https://github.com/thinkforward-ai/project-guide
 ---
 
@@ -11,13 +11,13 @@ proposals or start implementation here.
 
 ## Trigger
 
-Use when someone asks to choose among reviewable proposals for a registered
-issue.
+Use when proposals for a registered issue are ready to be listed for a
+choice.
 
 ## Entry Gate
 
-The issue and user-reviewed proposals must be recorded and relevant
-blockers explicit. If the issue, proposals, or needed evidence are
+The issue and its proposals must be recorded and relevant blockers
+explicit. If the issue, proposals, or needed evidence are
 missing, return to registration or refinement without inferring a choice.
 Do not decide while relevant blockers or contradictions are unresolved.
 If the project uses a different register, seek approval for layout alignment
@@ -27,24 +27,22 @@ before changing its issues.
 
 ### Choose and Accept
 
-1. Show every reviewed proposal in full, in the refine Proposal Format,
-   and compare them against the issue's constraints, evidence, risks,
-   and dissent. A sole proposal still needs explicit acceptance.
-   If none is acceptable, return to refinement.
+1. List every proposal in full, in the refine Proposal Format, compared
+   against the issue's constraints, evidence, risks, and dissent. Always
+   follow the list with the gate: **choose a proposal / continue
+   refining / pause**. Choosing (or approving a sole proposal) is the
+   decision; continuing returns to refinement; pause leaves the issue
+   open. A sole proposal still needs an explicit choice.
 2. Validate the choice against known facts, accepted decisions, the
    overview, and open issues. Show every conflict with its source and ask
-   the user to resolve each one explicitly before acceptance.
-3. State the exact choice and its consequences. Confirm all resolution
-   points with the user; mark each `✅` with a `Resolution` and `Details`
-   only after confirmation. Keep unconfirmed points `❓` and the issue
-   open. In team or organization mode, confirm the accepting individual's
+   the user to resolve each one explicitly before recording. If a
+   resolution changes the chosen proposal, show the change and get the
+   user's confirmation.
+3. Mark resolution points settled by the chosen proposal `✅` with a
+   `Resolution` and `Details`; ask only about points it leaves open, and
+   keep unconfirmed points `❓` and the issue open. In team or
+   organization mode, confirm the accepting individual's
    full name and role; never infer. In solo mode, record no attribution.
-4. Show the final decision wording and confirm that the entire issue is
-   ready to resolve. At this decision gate, always offer **Approve / Revise /
-   Pause**: Approve accepts the whole decision, Revise returns to refinement,
-   and Pause leaves the issue open without a new decision. Approval of one
-   point is not approval of the whole issue. Do not create a record
-   without explicit approval.
 
 ### Record and Apply
 
@@ -71,6 +69,8 @@ before changing its issues.
    ## Consequences
    - <Required changes or effects>
    ```
+
+   After recording, show the record's path and a short summary.
 
 2. Remove the resolved issue from `open-issues.md`; never reuse its ID.
    Leave earlier decisions untouched. If new evidence challenges one, propose

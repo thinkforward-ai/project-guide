@@ -8,8 +8,9 @@ source: https://github.com/thinkforward-ai/project-guide
 
 Coordinate the lifecycle; leave each phase's work to its own skill. The loop
 is: start a project and first issue → raise issues → refine selected
-issues and review proposals → explicitly decide → update understanding and
-review executable tasks → return to new or remaining issues as needed.
+issues → list proposals and take the user's choice as the decision →
+update understanding and review executable tasks → return to new or
+remaining issues as needed.
 
 ## Trigger
 
@@ -60,26 +61,26 @@ block progress or require a user-facing recitation.
    needs a decision, not this step.
 3. If the user requested status, show it directly. Otherwise, if the user
    has not named an action, offer only applicable choices:
-   **show current status** first, **refine an open issue**, **review
-   proposals**, **decide a reviewed issue**, **work on a ready task**,
+   **show current status** first, **refine an open issue**, **decide an
+   issue with ready proposals**, **work on a ready task**,
    **provide input or an idea**, or **pause**. Show full status only when
    requested or chosen: roadmap **Current focus** (the current milestone
    in full) and **Next** (name and one-line intent, never later
    milestones; say so if no roadmap exists), current understanding,
    issues and blockers,
-   reviewed proposals, accepted decisions, and executable tasks. If several
+   proposals ready for a choice, accepted decisions, and executable tasks. If several
    issues or tasks could be the focus, ask the user to choose. After showing
    status, offer the applicable choices again. Continue offering applicable
    choices after non-phase actions until the user pauses or a phase handoff
    begins.
 4. Follow the chosen action's trigger: a new goal without structure needs
    bootstrap; a new issue needs registration; an explicitly selected
-   issue needs refinement; reviewed proposals can be compared without
-   acceptance; a requested choice enters the decision gate. New input
-   about an issue does not itself authorize refinement. Registration
-   offers refine now or leave open; proposal review offers **Review
-   proposals / Continue refinement / Pause**; decision offers **Approve /
-   Revise / Pause**. Preserve each phase's own entry gate.
+   issue needs refinement; proposals ready for a choice enter the
+   decision phase. New input about an issue does not itself authorize
+   refinement. Registration offers refine now or leave open; listing
+   proposals is always followed by **choose a proposal / continue
+   refining / pause**, and a choice is the decision. Preserve each
+   phase's own entry gate.
 5. Invoke an available phase skill only when the user's intent and its
    entry gate permit it. If it cannot be invoked, explain the handoff
    instead of claiming it ran. After a phase runs, check its exit gate,
