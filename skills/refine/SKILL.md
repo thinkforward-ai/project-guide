@@ -35,16 +35,34 @@ layout alignment before changing its issues.
 3. When a new independent gap or contradiction appears, propose registering
    it as another open issue. Keep its relationship to the parent in the
    issue context; do not silently choose a solution for either.
-4. Develop one or more distinct proposals. For each, record how it addresses
-   the issue, supporting evidence, risks, trade-offs, and dependencies.
-   Keep concise findings and proposals with the open issue. Update the
+4. Develop one or more distinct proposals in the Proposal Format. Keep
+   concise findings and proposals with the open issue. Update the
    overview only with understanding already settled.
 5. Offer **Review proposals / Continue refinement / Pause**. When the
-   user chooses review, compare the proposals and remaining uncertainty.
+   user chooses review, present the proposals in the Proposal Format,
+   then the remaining uncertainty.
    Ask whether they are ready for a later decision or need revision;
    record the confirmation with the open issue. Do not select a
    winner, mark resolution points accepted, create a decision record, or
    create tasks.
+
+## Proposal Format
+
+Use this format whenever proposals are recorded or presented:
+
+```md
+**Problem:** <what the proposals solve, in one or two sentences>
+
+1. **<Proposal name>:** <solution description>
+   - **Pros:** <benefits and supporting evidence>
+   - **Cons:** <risks, trade-offs, and dependencies>
+```
+
+Always use a numbered list so proposals can be selected or referenced
+by number. Do not use tables.
+
+Whenever asking for review or a choice, show every proposal in full;
+never refer to proposals only by name, number, or summary.
 
 ## Exit Gate
 

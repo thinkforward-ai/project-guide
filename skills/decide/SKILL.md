@@ -27,9 +27,10 @@ before changing its issues.
 
 ### Choose and Accept
 
-1. Compare the reviewed proposals against the issue's constraints,
-   evidence, risks, and dissent. A sole proposal still needs explicit
-   acceptance. If none is acceptable, return to refinement.
+1. Show every reviewed proposal in full, in the refine Proposal Format,
+   and compare them against the issue's constraints, evidence, risks,
+   and dissent. A sole proposal still needs explicit acceptance.
+   If none is acceptable, return to refinement.
 2. State the exact choice and its consequences. Confirm all resolution
    points with the user; mark each `✅` with a `Resolution` and `Details`
    only after confirmation. Keep unconfirmed points `❓` and the issue
@@ -71,6 +72,11 @@ before changing its issues.
    a new issue instead of editing the accepted record.
 3. Update affected project understanding, including `overview.md`, and any
    stale plans or instructions. Link to the decision rather than copying it.
+4. Share the decision and the updated project understanding through the
+   project's shared store so the whole team can see them, e.g. commit
+   and push for Git, or update the relevant pages for a wiki. If the
+   store or the sharing method is unknown, ask. Sharing outside the
+   local workspace requires the user's approval.
 
 ### Prepare Tasks and Follow-ups
 
@@ -94,8 +100,9 @@ before changing its issues.
 
 ## Exit Gate
 
-Complete when the decision is recorded, the issue removed, affected
-understanding updated, and tasks or their absence reviewed with the user.
+Complete when the decision is recorded and shared, the issue removed,
+affected understanding updated, and tasks or their absence reviewed with
+the user.
 Report any unresolved blockers or declined tasks; do not claim they are ready.
 
 ## Transition
