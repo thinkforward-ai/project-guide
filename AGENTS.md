@@ -11,7 +11,8 @@ Always use numbered lists.
 
 1. `inputs/`: raw input artifacts, kept word for word. Never edited after capture.
 2. `overview.md`: current understanding of the framework's concept and scope.
-3. `open-issues.md`: unresolved issues only.
-4. `decisions/`: immutable decision records.
-5. `tasks/`: decision-linked executable instructions with no open design choices, not automatically started or scheduled.
-6. `skills/`: the framework's skills, one folder per skill with a `SKILL.md`.
+3. `roadmap.md`: milestones toward the goal and their progress.
+4. `open-issues.md`: unresolved issues only.
+5. `decisions/`: immutable decision records.
+6. `tasks/`: decision-linked executable instructions with no open design choices, not automatically started or scheduled.
+7. `skills/`: the framework's skills, one folder per skill with a `SKILL.md`.

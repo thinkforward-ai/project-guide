@@ -69,6 +69,11 @@ The detailed responsibility split for this processing is still an open question;
 4. Research documents always reflect the latest settled knowledge.
 5. A particular task can be ready while other issues remain open. Project-wide research is finished when no open issues block the intended implementation.
 
-## 10. Still Open
+## 10. Collaboration
+
+1. **Mode:** Unresolved ([Q15](open-issues.md#q15-open-source-collaboration-mode)).
+2. **Driving:** User-driven (founder input, 2026-10-10).
+
+## 11. Still Open
 
 Unresolved issues are tracked in [open-issues.md](open-issues.md).
