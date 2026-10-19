@@ -190,6 +190,7 @@ Without milestones, progress has no current focus and decisions and tasks cannot
 4. Founder input (2026-10-11): the collaboration is open source (see Q15). Outside contributors could arrive at any time, which may make team readiness more urgent.
 5. Founder ideas (2026-10-11) for sharing updates (Q16), integrations (Q5), a non-terminal interface (Q17), CI (Q18) and a contributing guide (Q19) point to a possible "Open for contributors" milestone. Revisit the proposals before deciding.
 6. The glossary defines a roadmap as naming no issues or tasks (`skills/glossary/SKILL.md`, item 13). Proposals here may cross-reference issues, but the milestones written into `roadmap.md` must state done-when criteria without issue IDs (founder clarification, 2026-10-11).
+7. Q14 was resolved on 2026-10-19 by the [complete-task decision](decisions/20261019-2137-complete-task-skill.md); its implementation remains to be done.
 
 ### Proposals
 
@@ -208,29 +209,6 @@ Without milestones, progress has no current focus and decisions and tasks cannot
 3. **Dogfood then external:** M1 Self-hosted, where Project Guide runs its own development with all solo gaps closed (Q1, Q6, Q7, Q14). M2 First external project, where one real project outside this repository runs from `start-project` to ready tasks, and the gaps it reveals are raised. Team and storage issues (Q2 to Q5) stay unassigned until evidence places them.
    - **Pros:** Milestones come from real use, not from a design guess. It surfaces gaps the open issues don't yet cover.
    - **Cons:** It depends on finding a suitable external project. Q2 to Q5 have no milestone, so the roadmap doesn't show team or storage readiness.
-
-## Q14: Handling completed tasks
-
-### Question
-
-What happens to a task in `tasks/` once its work is done?
-
-### Why It Matters
-
-Finished tasks stay in `tasks/` next to ready ones, so the folder no longer shows what is still executable. Roadmap progress also needs a way to tell which tasks are complete.
-
-### Context
-
-`tasks/README.md` and the [executable task decision](decisions/20261003-1541-executable-task-handoff.md) define when a task is ready, but not what marks it done. `add-ai-driven-mode-to-skills.md` and `add-project-guide-glossary-skill.md` look done (commits `7c7ff93`, `ab2aef2`) but remain in `tasks/`.
-
-### Resolution Points
-
-- ❓ **Completion handling**
-  - **Resolution:** Pending
-  - **Details:** For example, remove the file, mark it done, or move it to an archive.
-- ❓ **Completion evidence**
-  - **Resolution:** Pending
-  - **Details:** Who confirms a task is done and what record links it to the work.
 
 ## Q15: Open-source collaboration mode
 
