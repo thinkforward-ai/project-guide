@@ -189,6 +189,7 @@ Without milestones, progress has no current focus and decisions and tasks cannot
 3. `overview.md` section 2 puts execution skills and domain packs out of scope for now.
 4. Founder input (2026-10-11): the collaboration is open source (see Q15). Outside contributors could arrive at any time, which may make team readiness more urgent.
 5. Founder ideas (2026-10-11) for sharing updates (Q16), integrations (Q5), a non-terminal interface (Q17), CI (Q18) and a contributing guide (Q19) point to a possible "Open for contributors" milestone. Revisit the proposals before deciding.
+6. The glossary defines a roadmap as naming no issues or tasks (`skills/glossary/SKILL.md`, item 13). Proposals here may cross-reference issues, but the milestones written into `roadmap.md` must state done-when criteria without issue IDs (founder clarification, 2026-10-11).
 
 ### Proposals
 
@@ -259,6 +260,40 @@ Project Guide is open source (founder input, 2026-10-11), but the framework defi
 - ❓ **Project Guide's own mode**
   - **Resolution:** Pending
   - **Details:** What `overview.md` section 10 records for this project.
+
+### Findings
+
+1. The repository is licensed under Apache 2.0 and hosted at `github.com/thinkforward-ai/project-guide`.
+2. The glossary (`skills/glossary/SKILL.md`, items 9 to 12) and `decide` tie roles and attribution to the mode. Solo uses neither. Team uses roles and records who accepted each decision. Organization makes roles and decision rights explicit across teams.
+3. The current modes describe how many people take part, not who may join or who decides. Open source raises both questions: membership is open, and decision authority has to be named because contributors are unknown.
+4. So far every decision was accepted by the founder ("Maxim Nikitin (project manager)").
+5. Common to every option: outside input arrives through the shared store (for Git, pull requests and issues; Q16), is processed as input under `overview.md` section 8, and may lead to new issues. How contributors' roles and expertise are defined stays with Q2.
+6. Founder input (2026-10-11): for now only the founder accepts decisions on Project Guide; more maintainers may be added later by a decision.
+7. Founder input (2026-10-11) separates two ways of controlling changes:
+   1. **Platform protection:** merge requests and branch protection. Specific to a platform, unaware of roles, and a merged request can rewrite anything.
+   2. **Internal role model:** roles and expertise inside the project; the framework's skills tell each contributor what they may and may not do, and a contributor can still override it. This model assumes direct commits to the default branch: Git is used to track and share changes, not to protect them.
+   An earlier input the same day proposed protecting the default branch with merge requests only; findings 8 and 9 replace it: members commit directly, and merge requests apply only to non-members. The internal role model depends on Q2 (roles and expertise).
+8. Founder input (2026-10-11): letting anyone merge into the default branch doesn't scale safely. Instead, the public gets read-only access to the repository, skills included, at any time. Only accepted members contribute; on acceptance a member is given roles and expertise, and members commit directly to the default branch. This removes the need for branch protection.
+9. Founder input (2026-10-11): non-members may contribute through merge requests only, and only a limited circle may approve and merge them; members keep direct access to the default branch.
+10. Founder input (2026-10-11): only the project owner (the founder) adds or removes members.
+11. Decision provenance (founder input and discussion, 2026-10-11): a decision file is plain text, so its accepter line is not enforced by a merge request or by Git. Plain Git only hints at whether a commit came from a merge request; the platform's API knows reliably. On github.com, server-side Git hooks are unavailable and client-side hooks can be skipped, but a post-merge pipeline runs on every change to the default branch and knows the authenticated pusher, merge-request author, merger and approvers. The founder accepts a one-time provenance stamp by the platform as an exception to decision immutability, and wants decisions to carry two fields: "Made by" and "Approved by".
+
+### Proposals
+
+**Problem:** The framework has no collaboration mode for open-source projects, where anyone may contribute but someone must still accept decisions. Project Guide itself needs a mode recorded in `overview.md` section 10.
+
+1. **Open membership as a separate setting:** Keep the three modes for structure, and add a `**Membership:** open | closed` field to the Collaboration section (absent means closed). With open membership, anyone may give input, raise issues and develop proposals, while named maintainers accept decisions, and decisions record the maintainer's name and role. Project Guide would be recorded as team, open membership, with the founder as maintainer.
+   - **Pros:** Size and openness are independent, so the change is small. An open organization (several teams) is also covered. The existing team rules for attribution apply unchanged.
+   - **Cons:** It adds a third field to the Collaboration section. `start-project`, `decide` and the glossary need updates. "Team" may undersell an open community.
+2. **A fourth mode, "open source":** Add open source next to solo, team and organization. Anyone may contribute. Maintainers listed in the overview accept decisions, which record the maintainer's name and role. Contributors' roles are self-declared, and expertise claims are treated as input to verify (with Q2).
+   - **Pros:** One clear word matches how people describe such projects. Rules specific to open source, such as self-declared roles, have an obvious home.
+   - **Cons:** It mixes openness with size, so a large open project with several teams fits neither "open source" nor "organization" cleanly. Self-declared roles get ahead of Q2.
+3. **Solo decisions with open input:** Keep Project Guide solo, so one person decides with no roles or attribution, and allow open input on top: anyone may give input, raise issues and develop proposals.
+   - **Pros:** It matches today's reality of one decision-maker and needs the fewest changes.
+   - **Cons:** It conflicts with the definition of solo ("one person does the work") once others contribute. Decisions stop showing who accepted them, which hurts traceability for outside contributors (`overview.md` section 9). It doesn't scale to more maintainers.
+4. **Public read, member write:** Keep the three modes. Add a `**Visibility:** public | private` field to the Collaboration section (absent means private). A public project can be read by anyone, skills included, but only accepted members commit directly. Non-members contribute through merge requests only, which a limited circle (the maintainers) approves and merges; their content is processed as input under `overview.md` section 8. Only the project owner adds or removes members and assigns their roles and expertise; members and roles are listed in the Collaboration section, and maintainers are members whom the owner has given that role. On the platform, only the owner holds the administrative rights needed to manage access (on GitHub, the admin role). Members commit directly to the default branch; the skills tell each member what their roles allow, a member can override, and Git history keeps overrides visible. Decisions may arrive by direct commit or by merge request. A post-merge pipeline stamps each new decision once with two fields taken from authenticated platform accounts: "Made by" (the pusher of a direct commit, or the merge request's author, with the merge request number) and "Approved by" (the maintainer who merged the merge request, and its approvers). This one-time platform stamp is the only permitted change to a decision after it lands. If the pipeline fails, CI (Q18) flags decisions without a stamp. Project Guide would be recorded as team, public, with the founder as the only maintainer.
+   - **Pros:** Members are always known, so roles, expertise and attribution work as in team mode, and Q2 applies unchanged. Members work without merge-request overhead, while the public still has a reviewed path in. It fits the founder's input directly.
+   - **Cons:** On some platforms, letting members push directly while only maintainers merge others' requests may need platform rules (for example, GitHub rulesets with a bypass list) or stay a rule the skills enforce; this must be checked at setup (Q5, Q16). Member write access relies on the skills and history rather than hard enforcement, so a mistaken push reaches the default branch until it's reverted (CI in Q18 can catch some). The owner is a single point of failure for membership; handing it over or sharing it later needs a decision.
 
 ## Q16: Sharing contributor updates
 
