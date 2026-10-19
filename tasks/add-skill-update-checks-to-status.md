@@ -69,3 +69,7 @@
 ## Dependencies
 
 1. None.
+
+## Subsequent User Adjustment
+
+1. After implementation (2026-10-19), the user asked for a shorter section with the same behavior. `skills/work-on-project/SKILL.md` now carries a condensed four-rule Skill Update Check that still meets every acceptance criterion. The verbatim text above and the linked decision remain as records.

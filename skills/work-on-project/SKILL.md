@@ -95,6 +95,23 @@ block progress or require a user-facing recitation.
    Do not execute, schedule, assign, or create tasks here. Scheduling is
    offered only if a PM scheduling capability exists.
 
+## Skill Update Check
+
+1. Only when status is requested or chosen, check installed skills the
+   project evidently uses, including non-Project Guide ones; skip
+   unrelated installs. Briefly state scope and incomplete coverage; add
+   no configuration format.
+2. Compare with verified original sources through an available
+   skill-management capability, allowing for known install
+   transformations. Never call a local modification or uncertain
+   difference an update. Skills without a source, access, or checking
+   capability stay unchecked and never block status.
+3. List only the names of skills with updates; summarize the rest
+   briefly. Limit any "no updates" claim to checked skills. Show
+   differences only on request or during update review.
+4. Stay read-only; reviewing and applying updates needs a separate,
+   explicitly approved flow.
+
 ## AI-driven mode
 
 Read the driving mode from the overview. Choose the next action yourself, state it and why, and proceed. Show the menu when the stakeholder asks or a stakeholder gate is reached.
