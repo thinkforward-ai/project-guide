@@ -44,6 +44,8 @@ A shared framework, not tied to any one tool, that takes a goal and works it int
 
 The [lifecycle orchestrator decision](decisions/20261003-1603-project-lifecycle-orchestration.md) defines `work-on-project` as the entry point that reads project state, presents the complete pipeline and contextual next actions, and coordinates phase skills only through their triggers and gates. On opening or resuming any project, it proposes a project-specific translation to the current layout and obtains approval before changing existing material. On resumption, showing current status is an option, not an automatic report. Phase skills also work directly and use a consistent Trigger, Entry Gate, Work, Exit Gate, and Transition contract. The [shared vocabulary decision](decisions/20261003-1525-shared-vocabulary-and-orchestrator-preflight.md) calls for an optional glossary skill: when installed, the orchestrator checks its terms internally before routing, but its absence does not block progress.
 
+1. The [skill update checks decision](decisions/20261019-0218-skill-update-checks-in-status.md) adds a read-only check of all skills used by the project when status is requested or chosen. Status lists available updates concisely by skill name, without delta details; details appear only on request or during review. Incomplete checks are disclosed without blocking status, and applying updates requires separate approval.
+
 ## 8. Handling Input During Research
 
 Every piece of input that comes in is processed like this:
