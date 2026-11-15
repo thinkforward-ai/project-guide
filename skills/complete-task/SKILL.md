@@ -28,7 +28,10 @@ alignment comes first.
 1. Read the task and its linked decision. For each acceptance
    criterion, find evidence such as commits, files, or test results,
    and run read-only checks where the criterion names one. Do not
-   change the work to make a criterion pass.
+   change the work to make a criterion pass. In a project with a roster,
+   holders of the expertise a criterion requires check it, for example
+   the developer for a test result or the user advocate for
+   presentation.
 2. Show each criterion as met with its evidence, unmet, or
    unverifiable with the reason. Missing evidence for an unverifiable
    criterion may be supplied.
@@ -38,8 +41,8 @@ alignment comes first.
 4. When every criterion is met, completion needs confirmation, as the
    mode sections describe. Only on confirmation:
    1. Append this section to the task, leaving the rest unchanged. Use
-      `**Confirmed by:** AI (delegated)` when the agent confirms under
-      AI-driven delegation; otherwise omit `Confirmed by` in solo mode:
+      `**Confirmed by:** AI (<role>, delegated)` when the agent confirms
+      under AI-driven delegation; otherwise omit `Confirmed by` in solo mode:
 
       ```md
       ## Completion
@@ -79,7 +82,7 @@ Next: complete another finished task, register a follow-up issue through
 
 1. Gather evidence and assess each criterion. When every criterion is
    met with evidence, confirm completion yourself and record `Confirmed
-   by: AI (delegated)`.
+   by: AI (<role>, delegated)`.
 2. Register follow-up issues for gaps yourself. Ask the stakeholder only
    for evidence that only they can supply.
 3. If completing the task fulfils a milestone's criteria, the milestone

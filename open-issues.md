@@ -2,7 +2,7 @@
 
 This file contains only unresolved issues that currently require investigation or a decision.
 
-**Next question ID:** Q24
+**Next question ID:** Q25
 
 ## Q1: Input file organization
 
@@ -24,32 +24,6 @@ Initialization sources the goal and requirements from input files, so it can't b
   - **Resolution:** Pending
   - **Details:** Structure, naming, and required versus optional files.
 
-## Q2: Roles, expertise and bias definitions
-
-### Question
-
-How are roles, their expertise and their known biases defined: a fixed catalogue, set per project, or both?
-
-### Why It Matters
-
-Expertise decides whether input counts as opinion or expert opinion, and who can decide an issue. Bias definitions drive bias tagging.
-
-### Context
-
-`overview.md` sections 3 and 8. Solo collaboration mode uses no roles (founder input, 2026-10-04; `overview.md` section 3 and the glossary). Example biases: a PM leans towards fast and cheap at the cost of quality or security, and a backend engineer leans towards over-engineering.
-
-### Resolution Points
-
-- ❓ **Source of definitions**
-  - **Resolution:** Pending
-  - **Details:** A fixed catalogue, per-project definitions, or a shared catalogue with project overrides.
-- ❓ **Role-to-question matching**
-  - **Resolution:** Pending
-  - **Details:** How an issue's required expertise is matched to contributors' roles.
-- ❓ **Stakeholder role**
-  - **Resolution:** Pending
-  - **Details:** How the user as stakeholder (requirements, preferences, acceptance) differs from contributors, including AI roles in an AI-driven project (`decisions/20261004-1852-ai-driven-mode.md`).
-
 ## Q3: Who performs input processing
 
 ### Question
@@ -63,6 +37,8 @@ This decides how reliable and how automated the "under research" stage is, and w
 ### Context
 
 `overview.md` section 8: every input is classified, checked for bias, validated against settled knowledge, and checked for contradictions.
+
+The [project roles decision](decisions/20261115-1850-project-roles.md) settles part of this: input from a required expertise owner is expert opinion, and all other input is opinion, recorded but not binding. Opinions are not answered one by one ([framework consistency](decisions/20261115-1921-framework-consistency-and-guardian.md)).
 
 ### Resolution Points
 
@@ -83,6 +59,8 @@ Input is validated against settled facts and decisions, so an unclear notion of 
 ### Context
 
 `overview.md` section 8: a fact is something objectively true.
+
+Related: the [project roles decision](decisions/20261115-1850-project-roles.md) classifies opinion and expert opinion by the roster. Establishing facts remains open here; skills do not certify facts.
 
 ### Resolution Points
 
@@ -224,7 +202,7 @@ Verifying that only accepted members can write to `main` is the founder's top pr
 
 ### Context
 
-`overview.md` section 3 defines the three modes; solo uses no roles and no decision attribution. Every accepted decision so far names an accepter ("Maxim Nikitin (project manager)"). Split from Q13 (roadmap); its outcome may change milestone order there. Related to Q2 (roles and stakeholder role).
+`overview.md` section 3 defines the three modes; solo uses no roles and no decision attribution. Every accepted decision so far names an accepter ("Maxim Nikitin (project manager)"). Split from Q13 (roadmap); its outcome may change milestone order there. Related to the [project roles decision](decisions/20261115-1850-project-roles.md), which settled Q2: only expertise owners decide issues that need their expertise, and the stakeholder keeps reserved decisions. A proposal in which only the founder accepts decisions must be reconciled with that rule. The [framework consistency decision](decisions/20261115-1921-framework-consistency-and-guardian.md) gives Project Guide a provisional roster with a framework guardian.
 
 ### Resolution Points
 
@@ -440,3 +418,26 @@ User correction in a project managed with Project Guide (2026-11-15). After the 
 - ✅ **AI-driven mode**
   - **Resolution:** Settled by [AI-driven mode as delegation](decisions/20261115-1809-ai-driven-mode-as-delegation.md)
   - **Details:** In AI-driven mode, a milestone is reached only when the stakeholder confirms it after a demo. Whether this applies in user-driven mode stays open here.
+
+## Q24: Growing the role catalogue from projects
+
+### Question
+
+How should roles that projects define from scratch, or redefine, flow back into Project Guide's starter role catalogue?
+
+### Why It Matters
+
+The catalogue covers only domains the framework has seen. Without a feedback loop, every project in a new domain defines the same missing roles again, and improvements made in project rosters stay local.
+
+### Context
+
+Founder input (2026-11-15), while refining the [project roles decision](decisions/20261115-1850-project-roles.md): skills define missing roles from scratch in a project's roster, and later a feedback loop could source roles from projects back to the framework, so the catalogue keeps growing. The founder framed this as a future step.
+
+### Resolution Points
+
+- ❓ **Collection**
+  - **Resolution:** Pending
+  - **Details:** How new or redefined roles in project rosters are noticed and proposed back, for example during the skill update check or at milestone completion.
+- ❓ **Acceptance**
+  - **Resolution:** Pending
+  - **Details:** Who accepts a role into the catalogue, and what evidence of reuse it needs.

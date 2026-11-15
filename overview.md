@@ -18,6 +18,7 @@ A shared framework, not tied to any one tool, that takes a goal and works it int
 3. Each role carries expertise areas, experience and background. Those decide whose input counts as expert on which topic.
 4. Each role also carries known biases. For example, a PM may lean towards fast and cheap at the cost of quality or security. A backend engineer may lean towards over-engineering.
 5. The framework is AI-inclusive: any contributor, role holder or expertise holder can be a human or an AI agent.
+6. Each project keeps a roster of roles in the overview's Collaboration section, copied from a starter catalogue and adaptable. Each role states its interest, expertise, triggers, red lines, and known bias. Roles are tagged wherever their expertise is required, and only expertise owners decide such issues (relaxed in solo mode, where the one person decides); all other input is opinion, recorded for the complete picture. The stakeholder is the role held by the user and keeps the reserved decisions; AI roles run as lenses within one session. A role acts only within its own project; in other projects it may only raise an issue, which counts there as opinion ([role scope boundary](decisions/20261115-1929-role-scope-boundary.md)) ([project roles](decisions/20261115-1850-project-roles.md)).
 
 ## 4. Shared, Persistent Storage
 
@@ -37,11 +38,11 @@ A shared framework, not tied to any one tool, that takes a goal and works it int
 
 ## 7. Lifecycle of an Issue
 
-1. **Registered:** the initial project issue or a newly discovered issue is recorded. `raise-issue` registers later issues without analyzing them. After registration, the user chooses whether to refine now or leave the issue open for later.
+1. **Registered:** the initial project issue or a newly discovered issue is recorded. `raise-issue` registers later issues without analyzing them. After registration comes the choice to refine now or leave the issue open for later; the driving mode says who makes it.
 2. **Refined:** `refine` clarifies meaning and requirements, examines inputs, and develops one or more reviewable proposals without choosing one. It may reveal smaller issues, which are registered separately. This loop can run across several issues at once.
-3. **Decided:** when proposals and relevant blockers are ready, `decide` asks for explicit acceptance of one solution and records it as an immutable decision. Without acceptance the issue remains open.
+3. **Decided:** when proposals and relevant blockers are ready, `decide` takes an explicit choice of one solution from whoever holds the decision (the required expertise owners, the stakeholder for reserved decisions, as the driving mode applies) and records it as an immutable decision. Without acceptance the issue remains open.
 4. **Applied:** affected project understanding is updated. Actionable consequences become reviewed, decision-linked tasks under `tasks/` only when the [executable task handoff](decisions/20261003-1541-executable-task-handoff.md) is fully specified and unblocked. Consequences needing further design remain issues. Scheduling and execution are separate and may happen while unrelated issues remain open.
-5. **Closed:** `complete-task` checks a finished task's acceptance criteria against evidence and, on the user's confirmation, moves it to `tasks/closed/` with a Completion section and records roadmap progress. `tasks/` then holds only ready work ([complete-task decision](decisions/20261019-2137-complete-task-skill.md)).
+5. **Closed:** `complete-task` checks a finished task's acceptance criteria against evidence and, on confirmation (by the user, or by the AI in AI-driven mode), moves it to `tasks/closed/` with a Completion section and records roadmap progress. `tasks/` then holds only ready work ([complete-task decision](decisions/20261019-2137-complete-task-skill.md)).
 
 The [lifecycle orchestrator decision](decisions/20261003-1603-project-lifecycle-orchestration.md) defines `work-on-project` as the entry point that reads project state, presents the complete pipeline and contextual next actions, and coordinates phase skills only through their triggers and gates. On opening or resuming any project, it proposes a project-specific translation to the current layout and obtains approval before changing existing material. On resumption, showing current status is an option, not an automatic report. Phase skills also work directly and use a consistent Trigger, Entry Gate, Work, Exit Gate, and Transition contract. The [shared vocabulary decision](decisions/20261003-1525-shared-vocabulary-and-orchestrator-preflight.md) calls for an optional glossary skill: when installed, the orchestrator checks its terms internally before routing, but its absence does not block progress.
 
@@ -60,9 +61,9 @@ Every piece of input that comes in is processed like this:
 4. **Checked for contradictions:** any contradiction found must always be surfaced. It then becomes a new issue that needs the relevant expertise.
 5. **Kept for the record:**
    1. Non-expert opinions are never thrown away. They stay attached to the problem they're about, so there's a full history.
-   2. They're also input for the expert, who must explicitly accept or reject each one and give the reason.
+   2. They're considered by the expertise owners but not answered one by one; they don't bind the decision, and dissenting ones are listed in the decision record ([framework consistency](decisions/20261115-1921-framework-consistency-and-guardian.md)).
 
-The detailed responsibility split for this processing is still an open question; the refinement skill does not certify facts or infer expertise.
+The detailed responsibility split for this processing is still an open question. The refinement skill classifies input as opinion or expert opinion by the roster's expertise, and does not certify facts.
 
 ## 9. Guarantees the Framework Aims For
 
@@ -76,6 +77,13 @@ The detailed responsibility split for this processing is still an open question;
 
 1. **Mode:** Unresolved ([Q15](open-issues.md#q15-open-source-collaboration-mode)).
 2. **Driving:** User-driven (founder input, 2026-10-10).
+
+### Roles
+
+Provisional while Q15 is open ([framework consistency and guardian](decisions/20261115-1921-framework-consistency-and-guardian.md)).
+
+1. **Stakeholder:** the founder. Owns the framework's goal, requirements, and reserved decisions.
+2. **Framework guardian** (AI): the Guardian from the [catalogue](skills/glossary/roles-catalogue.md), applied to Project Guide. Its expertise is required on every issue that changes skills, the glossary, the overview, the layout, or decisions. It checks that a change stays consistent with accepted decisions and serves the framework's original goal and purpose, and its objection blocks the change until it is resolved or the stakeholder overrides it.
 
 ## 11. Still Open
 

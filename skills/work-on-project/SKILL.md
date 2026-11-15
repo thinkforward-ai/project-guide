@@ -54,7 +54,8 @@ block progress or require a user-facing recitation.
    require alignment; do not route to phase skills that require the target
    layout.
 2. After alignment or when the layout already matches, read the project's
-   overview, issue register, decisions, and tasks where available,
+   overview, including its roster of roles, issue register, decisions,
+   and tasks where available,
    treating `tasks/closed/` as completed work with nothing to do. After
    an approved alignment, re-read affected records.
    Use the records and explicit user confirmations to see which issues are
@@ -148,3 +149,5 @@ chosen, stop without changing another phase's state.
 4. When all criteria of a milestone are met, the milestone is ready for a
    demo, not reached. Give the stakeholder a demo; it is reached when they
    confirm it.
+5. Stop and report when the current milestone is ready for a demo, when
+   only reserved decisions remain, or when no applicable action is left.

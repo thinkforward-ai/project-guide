@@ -39,7 +39,13 @@ requirement. Until the user states a driving mode, follow user-driven mode.
    Collaboration section (mode, `**Driving:**`, and contributors) marked
    unresolved, referring to the first issue rather than presenting guesses
    as settled facts. If the user already stated the mode or driving mode,
-   record it. Initialize `roadmap.md` in the Roadmap Format with no milestones yet, referring
+   record it. In team or organization mode, propose the roles to add to a
+   Roles subsection of the Collaboration section: the stakeholder plus the
+   roles from the [starter catalogue](../glossary/roles-catalogue.md) that
+   the idea evidently needs, adapted to the project. For needed expertise
+   the catalogue lacks, as in a domain new to the framework, define the
+   role from scratch with the same fields. The roster may define new
+   roles or redefine catalogue roles. Initialize `roadmap.md` in the Roadmap Format with no milestones yet, referring
    to the roadmap issue.
 3. Register the confirmed first issue and roadmap issue in
    `open-issues.md` using the project's issue format. Keep `AGENTS.md` about the project structure and
@@ -82,8 +88,8 @@ issue open and stop. A new input alone does not silently start refinement.
 
 ## User-driven mode
 
-1. Show the two proposed issues and create the structure only after the
-   user confirms them.
+1. Show the two proposed issues and the proposed roles, and create the
+   structure only after the user confirms them.
 2. Ask whether to refine now or later. If the user already explicitly
    asked to start and refine now, use that choice without asking again.
 
@@ -91,8 +97,9 @@ issue open and stop. A new input alone does not silently start refinement.
 
 Applies only when the user stated AI-driven mode at the start.
 
-1. Create the structure and register both issues without a confirmation
-   gate, then report them.
+1. Create the structure, register both issues, and add the proposed
+   roles without a confirmation gate, then report them. The stakeholder
+   may change the roster at any time.
 2. Decide yourself whether to refine the first issue now and state why.
 3. The project's goal is a reserved decision: ask the stakeholder for the
    goal, requirements, and preferences in one batch, with your

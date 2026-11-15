@@ -16,3 +16,7 @@ Always use numbered lists.
 5. `decisions/`: immutable decision records.
 6. `tasks/`: decision-linked executable instructions with no open design choices, not automatically started or scheduled. `tasks/closed/` holds closed tasks with their Completion section.
 7. `skills/`: the framework's skills, one folder per skill with a `SKILL.md`.
+
+## Framework Guardian
+
+Every change to skills, the glossary, the overview, the layout, or decisions needs the framework guardian's verdict (roster in `overview.md` section 10). Check it against accepted decisions and the framework's original goal and purpose. An objection blocks the change until it is resolved or the founder overrides it.

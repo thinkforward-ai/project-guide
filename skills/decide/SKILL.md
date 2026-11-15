@@ -30,8 +30,15 @@ uses a different register, layout alignment comes first.
 ### Choose and Accept
 
 1. Compare every proposal, in full and in the refine Proposal Format,
-   against the issue's constraints, evidence, risks, and dissent. The
-   choice gate is **choose a proposal / continue refining / pause**.
+   against the issue's constraints, evidence, risks, and dissent,
+   including the expertise owners' objections and conditions and the
+   recorded opinions. In a project with a roster, only holders of the
+   issue's required expertise make the decision. Reserved decisions are
+   made by the stakeholder after the required expertise owners have given
+   their verdicts. In solo mode this is relaxed: the one person decides
+   every issue, or, in AI-driven mode, the AI decides every issue that is
+   not reserved. The choice gate is **choose a proposal / continue
+   refining / pause**.
    Choosing, or approving a sole proposal, is the decision; continuing
    returns to refinement; pausing leaves the issue open. A sole proposal
    still needs an explicit choice.
@@ -46,7 +53,7 @@ uses a different register, layout alignment comes first.
    person records that person's full name and role, confirmed rather than
    inferred; in solo mode, it records no attribution. A decision made by
    the agent under AI-driven delegation records `**Decided by:** AI
-   (delegated)` instead.
+   (<role>, delegated)` instead, naming the role whose expertise decided.
 
 ### Record and Apply
 
@@ -62,7 +69,9 @@ uses a different register, layout alignment comes first.
    **Date:** YYYY-MM-DD
 
    ## Problem Description
-   <Issue, facts, constraints, proposals, and material disagreement>
+   <Issue, facts, constraints, proposals, and material disagreement,
+   including expertise owners' objections and conditions and dissenting
+   opinions>
 
    ## Decision
    <Accepted choice>
@@ -121,9 +130,13 @@ was created.
 
 ## User-driven mode
 
-1. List the proposals neutrally and follow them with the choice gate;
-   only the user chooses.
-2. The user resolves each conflict and confirms any changed proposal.
+1. List the proposals neutrally and follow them with the choice gate.
+   The user passes the gate. On an issue that requires expertise, the
+   user confirms the expertise owner's choice or returns the issue to
+   refinement, and does not substitute a choice unless the user holds
+   that expertise.
+2. The user resolves each conflict, including conflicts between
+   expertise owners, and confirms any changed proposal.
 3. Review drafted tasks and follow-up issues with the user before
    creating or registering them.
 4. Hand a task to execution only on the user's explicit request.
@@ -133,10 +146,16 @@ was created.
 1. For a reserved decision, list every proposal in full with your
    recommendation, followed by the choice gate; only the stakeholder
    chooses.
-2. For any other decision, choose yourself, record it as `Decided by: AI
-   (delegated)`, and report it in one line. Records may be written when
+2. For any other decision, choose yourself as the role whose expertise
+   it requires, record it as `Decided by: AI (<role>, delegated)`, and
+   report it in one line. Records may be written when
    a burst of work ends.
-3. Resolve conflicts yourself unless they touch a reserved decision.
+3. Resolve conflicts yourself unless they touch a reserved decision. AI
+   expertise owners decide within their expertise. A conflict between
+   expertise owners is settled by the owner of the affected interest.
+   When both sides own an affected interest, or the conflict touches a
+   reserved decision, it goes to the stakeholder with both positions and
+   a recommendation.
 4. Confirm tasks and follow-up issues yourself, and hand tasks straight
    to execution within the delegation. Outward-facing sharing remains
    reserved.

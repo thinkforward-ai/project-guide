@@ -22,7 +22,7 @@ Use when:
 
 - a new blocker, ambiguity, contradiction, or unresolved choice appears;
 - missing information prevents safe progress;
-- the user confirms a proposed follow-up should be tracked;
+- a proposed follow-up is confirmed for tracking;
 - an accepted decision must be reconsidered through a new issue.
 
 ## Entry Gate
@@ -44,6 +44,15 @@ do not create a parallel one; layout alignment comes first.
 - Keep records concise: preserve meaning, not conversation transcripts.
 - Check existing issues and decisions before creating duplicates.
 - Record only known context; do not invent constraints or resolutions.
+- A role acts only within its own project. In a third-party project it may
+  only raise an issue, naming its origin project and role; there it counts
+  as opinion, and that project's own rules decide it.
+- In a project with a roster, list under `### Expertise` the roles whose
+  expertise the issue requires. Only they decide it; any other input is
+  opinion. If no role in the roster has that expertise, propose a role to
+  add: from the catalogue, or defined from scratch with the same fields.
+  Roster changes are neither issues nor decisions; the mode sections say
+  who confirms them.
 - Registration does not authorize investigation or external action.
 
 ## Work
@@ -97,6 +106,10 @@ Append the new issue using:
 
 - <Known hard requirement or boundary>
 
+### Expertise
+
+<Roles whose expertise the issue requires, or omit without a roster>
+
 ### Resolution Points
 
 - ❓ **<Point>**
@@ -104,7 +117,7 @@ Append the new issue using:
   - **Details:** <Known context or remaining uncertainty>
 ```
 
-Omit `### Constraints` when unknown. Add `### Decision Criteria`, `### Findings`, or `### Proposals` later only when useful.
+Omit `### Constraints` when unknown and `### Expertise` when the project has no roster. Add `### Decision Criteria`, `### Findings`, or `### Proposals` later only when useful.
 
 Advance `Next question ID` after appending.
 
@@ -129,7 +142,8 @@ decision, or a task.
 
 ## User-driven mode
 
-1. The user confirms follow-up issues before they are registered.
+1. The user confirms follow-up issues and roster changes before they are
+   made.
 2. Ask the user whether to refine now or later. If the user already
    explicitly asked to register and refine now, use that choice without
    asking again.
@@ -137,5 +151,5 @@ decision, or a task.
 ## AI-driven mode
 
 1. Register issues you discover without waiting to be asked, including
-   follow-ups.
+   follow-ups. Add proposed roles to the roster and report them.
 2. Choose refine now or later yourself and state why in one line.
