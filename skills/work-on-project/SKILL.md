@@ -77,6 +77,8 @@ block progress or require a user-facing recitation.
    requested or chosen: roadmap **Current focus** (the current milestone
    in full) and **Next** (name and one-line intent, never later
    milestones; say so if no roadmap exists), current understanding,
+   the current role roster (roles and holders; flag provisional or
+   unresolved entries, or state that solo mode uses no roles),
    issues and blockers,
    proposals ready for a choice, accepted decisions, and executable tasks.
 4. Follow the chosen action's trigger: a new goal without structure needs
