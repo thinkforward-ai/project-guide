@@ -2,7 +2,7 @@
 
 This file contains only unresolved issues that currently require investigation or a decision.
 
-**Next question ID:** Q26
+**Next question ID:** Q27
 
 ## Q1: Input file organization
 
@@ -441,3 +441,34 @@ Founder input (2026-11-15), while refining the [project roles decision](decision
 - ❓ **Acceptance**
   - **Resolution:** Pending
   - **Details:** Who accepts a role into the catalogue, and what evidence of reuse it needs.
+
+## Q26: Every phase runs through its skill, also in AI-driven mode
+
+### Question
+
+Should AI-driven mode state explicitly that "flow without stops" still runs every phase through its skill, with records written as part of each phase rather than afterwards?
+
+### Why It Matters
+
+Records are the source of truth and leave the trace; a session is only a temporary work process, not the outcome. Without an explicit rule, an agent can read "flow without stops" and "records may be written when a burst of work ends" as permission to skip phases and fill in records later, which leaves records that describe steps that never happened.
+
+### Context
+
+Raised from the ninetiles project by its Project manager role. It counts as opinion here, under the [role scope boundary](decisions/20261115-1929-role-scope-boundary.md). In ninetiles, the M4 feature was delivered in AI-driven mode without invoking `raise-issue`, `refine`, or `decide`. No issue or task existed, the decision was written after implementation, and it falsely claimed that an issue had been registered. ninetiles corrected this with a new decision. The ninetiles stakeholder stated: "team should always follow the workflow and the structure - since it is a backbone. The purpose is to maintain the source of truth, keep traces - session is not one. Session is just an operational temprorary short-living entity. It is a work process. Not the outcome." Related to the [AI-driven delegation decision](decisions/20261115-1809-ai-driven-mode-as-delegation.md).
+
+### Resolution Points
+
+- ❓ **Phases in AI-driven mode**
+  - **Resolution:** Pending
+  - **Details:** Whether delegation removes only the stakeholder's gates, while every phase still runs through its skill.
+- ❓ **Record timing**
+  - **Resolution:** Pending
+  - **Details:** Whether "records may be written when a burst of work ends" should be replaced by writing each record as its phase completes.
+
+### Proposals
+
+**Problem:** AI-driven mode can be read as permission to skip phases and fill in records afterwards.
+
+1. **Phases are the backbone:** State in the AI-driven sections and the glossary that delegation removes waiting for the stakeholder, not phases. Each phase runs through its skill, and its records are written and shared as that phase completes. Records are the source of truth; a session is a temporary work process. Remove "records may be written when a burst of work ends".
+   - **Pros:** Records stay true and complete, and the trace never depends on a session surviving. It costs no stakeholder time.
+   - **Cons:** It adds a few record writes per feature.
