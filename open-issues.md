@@ -2,7 +2,7 @@
 
 This file contains only unresolved issues that currently require investigation or a decision.
 
-**Next question ID:** Q29
+**Next question ID:** Q30
 
 ## Q1: Input file organization
 
@@ -537,3 +537,31 @@ Raised from the ninetiles project by its Project manager role. It counts as opin
 1. **Adjust relative links on the move:** `complete-task` rewrites the task's relative links so they still resolve from `tasks/closed/`, and treats this as part of moving it unchanged.
    - **Pros:** Closed tasks keep a working trace with no change to how tasks are written.
    - **Cons:** It is one more mechanical step, and it conflicts with the wording "unchanged" unless that is clarified.
+
+## Q29: Purpose-based references in Project Guide skills
+
+### Question
+
+Should Project Guide's skills refer to each other and to their resources by phase, capability, or purpose rather than by skill or file name?
+
+### Why It Matters
+
+People may fill a phase or capability with a different skill, and installed names carry prefixes. References by identifier then fail or mislead.
+
+### Context
+
+Raised from the ninetiles project by its Project manager role. It counts as opinion here, under the [role scope boundary](decisions/20261115-1929-role-scope-boundary.md). The start-project fix (`64c5afb`) replaced a relative link with "`roles-catalogue.md` in the Project Guide glossary skill", which is still an identifier. Skills also name each other, for example "through `complete-task`" and "`raise-issue`". The user's principle: references should be "generic purpose-based / trigger-based definitions, rather than identificators." A related authoring rule is raised in Agent Hub (Q9 there).
+
+### Resolution Points
+
+- ❓ **References to rewrite**
+  - **Resolution:** Pending
+  - **Details:** Which phase-skill and resource references become purpose-based, and how a bundled resource such as the role catalogue is found by purpose.
+
+### Proposals
+
+**Problem:** Project Guide skills name other skills and files.
+
+1. **Phase and capability references:** Phase skills refer to each other by phase or capability (for example "issue registration" or "task completion"), and to the role catalogue as "the starter role catalogue", never by skill name, file name, or path.
+   - **Pros:** Any provider can fill a phase, and references survive install prefixing.
+   - **Cons:** The agent must map purposes to installed skills, and the catalogue's location must be discoverable by purpose.
