@@ -12,6 +12,10 @@ the task here.
 Be concise: lead with what matters, ask only what is needed now, and
 never repeat content the user has just seen.
 
+For visible role involvement, follow the **Role visibility** convention
+in the Project Guide glossary skill when available. Its absence does
+not block this phase.
+
 ## Trigger
 
 Someone reports a task done, or chooses **complete a task** in

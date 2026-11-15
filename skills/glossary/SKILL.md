@@ -90,3 +90,18 @@ source: https://github.com/thinkforward-ai/project-guide
 28. **Guardian:** A role that protects a project's durable definition and
     its original goal and purpose. Its objection blocks a change until it
     is resolved or the stakeholder overrides it.
+
+## Role visibility
+
+1. **Display convention:**
+   1. Each passage written while a role acts starts with its bold bracket tag, for example `**[Framework guardian]** Condition: ...`.
+   2. A call-in appears on its own line: `↳ **[Framework guardian]** called in: <trigger>`.
+   3. Project Guide supplies Coordinator in the starter role catalogue. Projects explicitly add it to their rosters when needed.
+   4. Coordination uses `**[Coordinator]**` only when that role is rostered and acting. Otherwise coordination continues without a role tag or an implied assignment.
+   5. Define the display convention once in the glossary and Coordinator once in `skills/glossary/roles-catalogue.md`. Skills involving roles reference these definitions rather than duplicate them.
+2. **Boundaries:**
+   1. Role names come from the current project's roster. Do not invent roles or use another project's roles.
+   2. Coordinator is project-scoped, not globally empowered or automatically included. Roster additions follow the existing mode-specific confirmation rules. This decision does not itself add Coordinator to Project Guide's roster.
+   3. A call-in means actually applying the role's perspective and stating its trigger, not merely displaying a name. It does not imply a separate agent session.
+   4. The AI never speaks as the stakeholder. Attribute stakeholder input to its actual source. Solo mode still uses no roles, so these markers do not apply there.
+   5. Tags grant no authority. Wording such as "decides", "advises", and "implements" reflects what actually happened under the project's existing rules.

@@ -48,3 +48,10 @@ Each role states: **Interest** (what it represents), **Expertise**, **Triggers**
    3. **Triggers:** any change to the durable definition, such as the concept, the framework, the glossary, or the layout. Its expertise is required on such issues, and its objection blocks the change until it is resolved or the stakeholder overrides it.
    4. **Red lines:** an unresolved contradiction with an accepted decision; the same rule worded differently in different places; additions that do not serve the goal.
    5. **Known bias:** conservatism, resisting useful change.
+8. **Coordinator**
+   1. **Interest:** a coherent, traceable project workflow whose records faithfully reflect the work and choices made.
+   2. **Expertise:** Project Guide's lifecycle, artifacts, gates, phase readiness, and handoffs. It may assess process readiness but gains no domain decision authority.
+   3. **Triggers:** opening or resuming a project, phase handoffs, readiness checks, and process or record inconsistencies.
+   4. **Red lines:** skipping required phases or gates, inventing acceptance or evidence, acting outside its project, or overriding expertise owners or stakeholder-reserved decisions.
+   5. **Known bias:** procedural overhead and excessive checking at the expense of progress.
+   6. **Boundary with Project manager:** Coordinator protects process correctness and traceability. Project manager protects scope, priorities, risk, and delivery. Neither takes over the other's expertise merely by coordinating.
