@@ -77,7 +77,7 @@ The detailed responsibility split for this processing is still an open question.
 ## 10. Collaboration
 
 1. **Mode:** Unresolved ([Q15](open-issues.md#q15-open-source-collaboration-mode)).
-2. **Driving:** User-driven (founder input, 2026-10-10).
+2. **Driving:** AI-driven ([project-level mode decision](decisions/20261115-2146-project-guide-ai-driven-mode.md)).
 
 ### Roles
 
