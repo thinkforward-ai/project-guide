@@ -85,6 +85,12 @@ block progress or require a user-facing recitation.
    unresolved entries, or state that solo mode uses no roles),
    issues and blockers,
    proposals ready for a choice, accepted decisions, and executable tasks.
+
+   Required status content must be shown even if unchanged or shown earlier.
+   List every roster role and its recorded holder; mark missing holders as
+   “not recorded” and flag provisional or unresolved entries. Never substitute
+   a role count or gap summary. If no roster is recorded, say so; in solo mode,
+   state that no roles are used.
 4. Follow the chosen action's trigger: a new goal without structure needs
    bootstrap; a new issue needs registration; an explicitly selected
    issue needs refinement; proposals ready for a choice enter the
