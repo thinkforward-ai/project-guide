@@ -33,10 +33,20 @@ source: https://github.com/thinkforward-ai/project-guide
 13. **Roadmap:** The journey toward the project's goal as milestones in
     intended order. It names no issues or tasks.
 14. **Milestone:** A roadmap step with an intent, observable "done when"
-    criteria, and a one-line progress log. In user-driven mode it is
-    achieved when all criteria are met; in AI-driven mode it is then ready
-    for a demo and achieved when the stakeholder confirms it. Adding,
-    replacing, redefining, or cancelling one requires a decision.
+    criteria, a demo, and a one-line progress log. In every mode, meeting
+    the criteria makes it ready for a demo, not achieved. Achievement
+    requires an evidence-backed demo followed by explicit confirmation
+    from the project's designated human stakeholder acceptance authority.
+    In solo mode the user confirms without introducing roles; with several
+    stakeholders, use the project's accepted authority arrangements and
+    never infer consent or a quorum. Run or directly show the outcome
+    where possible; otherwise prepare and present HTML slides explaining
+    the outcome and its acceptance evidence. Slides do not replace unmet
+    criteria. Record the demo date, evidence or artifact reference, and
+    explicit confirmation in the progress log; without confirmation, keep
+    the milestone unachieved and do not advance the current milestone on
+    that basis. Adding, replacing, redefining, or cancelling one requires
+    a decision.
 15. **AI-driven:** The agent, possibly a team of AI roles, runs the
     lifecycle and makes every decision not reserved for the stakeholder,
     without phase gates. It records its decisions as `Decided by: AI

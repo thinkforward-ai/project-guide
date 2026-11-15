@@ -68,9 +68,10 @@ block progress or require a user-facing recitation.
    each decision or completed task since the last progress entry, add a
    one-line entry to any milestone it moves or relates to and mark the
    criteria it satisfies `✅`. When all criteria of a milestone are met,
-   it is achieved as the mode sections describe, and then the next one
-   becomes current. Changing milestones
-   needs a decision, not this step.
+   it is ready for a demo, not achieved. Follow Milestone Acceptance below;
+   only after the demo and explicit stakeholder confirmation is it
+   achieved and the next one becomes current. Changing milestones needs
+   a decision, not this step.
 3. If status was requested, show it directly. Otherwise, when no action
    is named, the next action comes from the applicable choices:
    **show current status** first, **refine an open issue**, **decide an
@@ -111,6 +112,25 @@ block progress or require a user-facing recitation.
    Do not execute, schedule, assign, or create tasks here. Scheduling is
    offered only if a PM scheduling capability exists.
 
+## Milestone Acceptance
+
+1. In every collaboration and driving mode, deliver an evidence-backed
+   demo when all milestone criteria are met. Run or directly show the
+   outcome where possible; otherwise prepare and present HTML slides
+   explaining the outcome and its acceptance evidence. Slides do not
+   compensate for unmet criteria.
+2. Achievement requires explicit confirmation after the demo from the
+   project's designated human stakeholder acceptance authority. In solo
+   mode the user confirms without introducing roles. With several
+   stakeholders, follow the project's accepted authority arrangements;
+   if those are unclear, do not infer confirmation or invent a quorum.
+3. Record the demo date, evidence or artifact reference, and explicit
+   confirmation in the existing roadmap progress log. Silence, checked
+   criteria, AI judgement, and slide delivery are not confirmation.
+4. Without confirmation, keep the milestone unachieved and do not advance
+   the current milestone on that basis. Independent work retains its
+   existing permissions.
+
 ## Skill Update Check
 
 1. Only when status is requested or chosen, check installed skills the
@@ -146,7 +166,8 @@ chosen, stop without changing another phase's state.
    showing status or finishing a non-phase action, offer the choices
    again until the user pauses or a phase handoff begins.
 2. The user approves alignment changes and authorizes each transition.
-3. A milestone is achieved when all its criteria are met.
+3. Meeting criteria alone never achieves a milestone; follow Milestone
+   Acceptance, including the demo and explicit stakeholder confirmation.
 4. Hand a ready task to execution only on the user's explicit request.
 
 ## AI-driven mode
@@ -158,8 +179,7 @@ chosen, stop without changing another phase's state.
    Changes that discard or rewrite content are reserved.
 3. Pass transitions yourself within the delegation, and hand ready tasks
    to execution.
-4. When all criteria of a milestone are met, the milestone is ready for a
-   demo, not reached. Give the stakeholder a demo; it is reached when they
-   confirm it.
+4. Follow Milestone Acceptance. Stakeholder confirmation after the demo
+   remains reserved and cannot be supplied by the AI.
 5. Stop and report when the current milestone is ready for a demo, when
    only reserved decisions remain, or when no applicable action is left.

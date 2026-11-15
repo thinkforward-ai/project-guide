@@ -71,13 +71,26 @@ The journey toward the goal in [overview.md](overview.md).
 
 - ❓ <observable criterion>
 
+**Demo:** <run or directly show the outcome; otherwise present HTML slides>
+
 **Progress:**
 
-- YYYY-MM-DD: <what was done>
+- YYYY-MM-DD: <progress; demo date and evidence/artifact reference, and explicit confirmation when received>
 ```
 
 Milestones appear in intended order. Achieved or cancelled milestones
 stay listed and say so under their heading.
+In every mode, meeting criteria makes a milestone ready for a demo, not
+achieved. Achievement requires an evidence-backed demo and then explicit
+confirmation from the project's designated human stakeholder acceptance
+authority. In solo mode the user confirms without introducing roles; with
+several stakeholders, follow accepted authority arrangements and never
+infer consent or a quorum. Run or directly show the outcome where possible;
+otherwise prepare and present HTML slides with the acceptance evidence.
+Record the demo date, evidence or artifact reference, and explicit
+confirmation in Progress. Slides, checked criteria, silence, and AI judgement
+do not replace confirmation; without it, keep the milestone unachieved and
+do not advance the current milestone on that basis.
 
 ## Exit Gate
 

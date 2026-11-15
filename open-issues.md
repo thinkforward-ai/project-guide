@@ -390,35 +390,6 @@ That project adopted it locally: a `concept.md` whose statements link to their s
   - **Resolution:** Pending
   - **Details:** How work-on-project and start-project treat definition files when bootstrapping or aligning a project.
 
-## Q22: Milestone confirmation by demo
-
-### Question
-
-Should a milestone count as reached only after the stakeholder has been given a demo and has confirmed it, rather than as soon as its criteria are met?
-
-### Why It Matters
-
-work-on-project and the glossary say a milestone is achieved when all its criteria are met, and the next becomes current. An agent can therefore claim completion and start the next milestone without stakeholder sign-off, especially in AI-driven mode.
-
-### Context
-
-User correction in a project managed with Project Guide (2026-11-15). After the AI marked a milestone achieved because its criteria were met, the user said: "Reaching milestone means - giving me a demo - so I can confirm it is reached." That project recorded it as a decision and added a confirmation criterion to every milestone. Related to Q13 (project roadmap) and Q6 (measuring progress and completion).
-
-### Resolution Points
-
-- ❓ **Confirmation rule**
-  - **Resolution:** Pending
-  - **Details:** Whether meeting the criteria makes a milestone ready for a demo rather than reached, and who confirms it in solo, team, and organization modes.
-- ❓ **Demo form**
-  - **Resolution:** Pending
-  - **Details:** What counts as a demo for non-software milestones, and whether its form is agreed per milestone.
-- ❓ **Skill wording**
-  - **Resolution:** Pending
-  - **Details:** Changes to the work-on-project roadmap step, the glossary's Milestone term, and the start-project roadmap template.
-- ✅ **AI-driven mode**
-  - **Resolution:** Settled by [AI-driven mode as delegation](decisions/20261115-1809-ai-driven-mode-as-delegation.md)
-  - **Details:** In AI-driven mode, a milestone is reached only when the stakeholder confirms it after a demo. Whether this applies in user-driven mode stays open here.
-
 ## Q24: Growing the role catalogue from projects
 
 ### Question
