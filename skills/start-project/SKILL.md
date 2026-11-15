@@ -28,7 +28,7 @@ roadmap issue about the project's milestones; confirm both before creating the s
 ## Work
 
 1. Create `README.md`, `AGENTS.md`, `overview.md`, `roadmap.md`,
-   `open-issues.md`, and directories for `inputs/`, `decisions/`, and `tasks/` without overwriting
+   `open-issues.md`, and directories for `inputs/`, `decisions/`, `tasks/`, and `tasks/closed/` without overwriting
    existing material. Preserve provided input files unchanged.
 2. Put the user's original idea in the first issue's context. Initialize
    `overview.md` with the goal, context, scope, constraints, and a

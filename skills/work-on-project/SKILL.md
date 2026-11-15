@@ -37,7 +37,7 @@ block progress or require a user-facing recitation.
 1. On opening or resuming any existing project, compare its actual artifacts
    with the current Project Guide layout (`README.md`, `AGENTS.md`,
    `overview.md`, `roadmap.md`, `open-issues.md`, `inputs/`, `decisions/`,
-   and `tasks/`).
+   `tasks/`, and `tasks/closed/`).
    Do not assume its layout is an older Project Guide version. If alignment
    is needed, propose a project-specific source-to-target translation,
    including planned file changes, content mapping, conflicts, and anything
@@ -53,7 +53,8 @@ block progress or require a user-facing recitation.
    require alignment; do not route to phase skills that require the target
    layout.
 2. After alignment or when the layout already matches, read the project's
-   overview, issue register, decisions, and tasks where available. After
+   overview, issue register, decisions, and tasks where available,
+   treating `tasks/closed/` as completed work with nothing to do. After
    an approved alignment, re-read affected records.
    Use the records and explicit user confirmations to see which issues are
    open and which proposals were reviewed; do not invent a stage field,
@@ -66,7 +67,9 @@ block progress or require a user-facing recitation.
 3. If the user requested status, show it directly. Otherwise, if the user
    has not named an action, offer only applicable choices:
    **show current status** first, **refine an open issue**, **decide an
-   issue with ready proposals**, **work on a ready task**,
+   issue with ready proposals**, **work on a ready task**, **complete a
+   task** when one looks finished (through `complete-task`; never move
+   tasks here),
    **provide input or an idea**, or **pause**. Show full status only when
    requested or chosen: roadmap **Current focus** (the current milestone
    in full) and **Next** (name and one-line intent, never later

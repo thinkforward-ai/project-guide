@@ -7,6 +7,11 @@ must be available, dependencies complete, and implementation choices settled
 before registration. Keep researchable gaps with an open issue, not under
 `tasks/`. Readiness does not mean assigned, scheduled, or started. For edits to existing text, quote the current text and its replacement.
 
+When a task's work is finished, close it with `complete-task`: it checks the
+acceptance criteria against evidence and, on confirmation, moves the task
+unchanged to `tasks/closed/` with an appended Completion section. `tasks/closed/`
+holds completed work with nothing to do.
+
 Use this structure for each task:
 
 ```md
