@@ -14,7 +14,7 @@ A shared framework, not tied to any one tool, that takes a goal and works it int
 ## 3. Who Takes Part
 
 1. One or more contributors, each holding at least one role. The overview states the project's collaboration mode: solo (one person), team (several contributors), or organization (a group of teams). Solo projects use no roles and no decision attribution.
-2. The overview also states the driving mode: user-driven (the user passes every gate) or AI-driven (AI, possibly a team of AI roles, runs the process and consults the user as stakeholder for decisions and anything in the user's interest). An absent field means user-driven ([AI-driven mode](decisions/20261004-1852-ai-driven-mode.md)).
+2. The overview also states the driving mode: user-driven (the user passes every gate and makes every decision) or AI-driven (the agent makes every decision not reserved for the stakeholder, without phase gates, and confirms milestones through demos). An absent field means user-driven. Each skill has a mode-independent framework part, followed by a user-driven and an AI-driven section that tune it ([AI-driven mode as delegation](decisions/20261115-1809-ai-driven-mode-as-delegation.md), superseding [AI-driven mode](decisions/20261004-1852-ai-driven-mode.md)).
 3. Each role carries expertise areas, experience and background. Those decide whose input counts as expert on which topic.
 4. Each role also carries known biases. For example, a PM may lean towards fast and cheap at the cost of quality or security. A backend engineer may lean towards over-engineering.
 5. The framework is AI-inclusive: any contributor, role holder or expertise holder can be a human or an AI agent.

@@ -2,7 +2,7 @@
 
 This file contains only unresolved issues that currently require investigation or a decision.
 
-**Next question ID:** Q21
+**Next question ID:** Q24
 
 ## Q1: Input file organization
 
@@ -380,3 +380,63 @@ Founder input (2026-10-11). Depends on Q15 (open-source mode and decision author
 - ❓ **Location**
   - **Resolution:** Pending
   - **Details:** For example `CONTRIBUTING.md`, the README, or both.
+
+## Q21: Durable definitions shaped by increments
+
+### Question
+
+How should issues, decisions and tasks, as increments, shape durable definition files that every accepted change updates and every new proposal is checked against?
+
+### Why It Matters
+
+Without a durable definition, settled meaning is scattered across issue records, inputs, decisions and the overview. New proposals have nothing stable to be checked against, and the current definition must be reconstructed from history.
+
+### Context
+
+User input from a project managed with Project Guide (2026-11-15): "open issues ande decisions and tasks - these are increments. However they should shape durable definitions. For instanst in this case - we can decide to create a concept file. It means we keep updating it every time the concept changes. It also means - we check any new proposals - if they match it and how to integrate them".
+
+That project adopted it locally: a `concept.md` whose statements link to their source input or decision, a **Concept fit** line in every proposal, and an update of `concept.md` in the same step as each accepted decision. Related to `overview.md` (settled understanding), the refine Proposal Format, decide (Record and Apply), and the layouts in work-on-project and start-project.
+
+### Resolution Points
+
+- ❓ **Definition files**
+  - **Resolution:** Pending
+  - **Details:** Whether the layout names durable definition files or lets each project choose them (for example concept, requirements, architecture), and how they differ from `overview.md`.
+- ❓ **Proposal fit**
+  - **Resolution:** Pending
+  - **Details:** Whether the refine Proposal Format adds a fit line stating which definitions a proposal matches, changes or extends, and how it would be integrated.
+- ❓ **Update on decision**
+  - **Resolution:** Pending
+  - **Details:** Whether decide updates affected definitions in the same step, and how statements link to their decision or input.
+- ❓ **Layout handling**
+  - **Resolution:** Pending
+  - **Details:** How work-on-project and start-project treat definition files when bootstrapping or aligning a project.
+
+## Q22: Milestone confirmation by demo
+
+### Question
+
+Should a milestone count as reached only after the stakeholder has been given a demo and has confirmed it, rather than as soon as its criteria are met?
+
+### Why It Matters
+
+work-on-project and the glossary say a milestone is achieved when all its criteria are met, and the next becomes current. An agent can therefore claim completion and start the next milestone without stakeholder sign-off, especially in AI-driven mode.
+
+### Context
+
+User correction in a project managed with Project Guide (2026-11-15). After the AI marked a milestone achieved because its criteria were met, the user said: "Reaching milestone means - giving me a demo - so I can confirm it is reached." That project recorded it as a decision and added a confirmation criterion to every milestone. Related to Q13 (project roadmap) and Q6 (measuring progress and completion).
+
+### Resolution Points
+
+- ❓ **Confirmation rule**
+  - **Resolution:** Pending
+  - **Details:** Whether meeting the criteria makes a milestone ready for a demo rather than reached, and who confirms it in solo, team, and organization modes.
+- ❓ **Demo form**
+  - **Resolution:** Pending
+  - **Details:** What counts as a demo for non-software milestones, and whether its form is agreed per milestone.
+- ❓ **Skill wording**
+  - **Resolution:** Pending
+  - **Details:** Changes to the work-on-project roadmap step, the glossary's Milestone term, and the start-project roadmap template.
+- ✅ **AI-driven mode**
+  - **Resolution:** Settled by [AI-driven mode as delegation](decisions/20261115-1809-ai-driven-mode-as-delegation.md)
+  - **Details:** In AI-driven mode, a milestone is reached only when the stakeholder confirms it after a demo. Whether this applies in user-driven mode stays open here.

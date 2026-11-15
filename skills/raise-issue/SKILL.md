@@ -31,10 +31,10 @@ The issue must be unresolved rather than a routine task. A small
 clarification of an issue under discussion belongs to that issue, not a
 new one.
 Check for duplicates and accepted decisions before registering it; ask
-only when missing information prevents a clear record. A user-confirmed
-follow-up issue may be registered, but never infer that confirmation.
-If the project uses a different register, do not create a parallel one;
-seek approval for layout alignment before registration.
+only when missing information prevents a clear record. A follow-up issue
+needs confirmation before registration, as the mode sections describe;
+never infer that confirmation. If the project uses a different register,
+do not create a parallel one; layout alignment comes first.
 
 ## Rules
 
@@ -112,12 +112,8 @@ Advance `Next question ID` after appending.
 
 Verify: new ID, next ID advanced, coherent issue, no status field, concise/no placeholders, resolution points use `❓`/`Resolution: Pending`, no duplicates, no unauthorized investigation.
 
-Report the created/updated issue ID and title, then offer the transition
+Report the created/updated issue ID and title, then reach the transition
 choice below. Do not begin investigating as part of registration.
-
-## AI-driven mode
-
-Register issues you discover without waiting to be asked. Decide yourself whether to refine now or later and state why.
 
 ## Exit Gate
 
@@ -126,8 +122,20 @@ decide, resolve, propagate, or create follow-up work here.
 
 ## Transition
 
-After registration, ask whether to refine the issue now or leave it open
-for later. If the user already explicitly asked to register and refine now,
-use that choice without asking again. Refine only after the user chooses now;
-if later, leave the issue open and stop. Registration or new input alone
-does not authorize refinement, a decision, or a task.
+After registration comes the choice to refine the issue now or leave it open
+for later. Refine only after "now" is chosen; if later, leave the issue open
+and stop. Registration or new input alone does not authorize refinement, a
+decision, or a task.
+
+## User-driven mode
+
+1. The user confirms follow-up issues before they are registered.
+2. Ask the user whether to refine now or later. If the user already
+   explicitly asked to register and refine now, use that choice without
+   asking again.
+
+## AI-driven mode
+
+1. Register issues you discover without waiting to be asked, including
+   follow-ups.
+2. Choose refine now or later yourself and state why in one line.

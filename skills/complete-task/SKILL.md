@@ -20,8 +20,8 @@ Someone reports a task done, or chooses **complete a task** in
 ## Entry Gate
 
 The task must exist under `tasks/`, not `tasks/closed/`. If several tasks
-could be meant, ask which one. If the project lacks `tasks/closed/`, seek
-approval for layout alignment first.
+could be meant, ask which one. If the project lacks `tasks/closed/`, layout
+alignment comes first.
 
 ## Work
 
@@ -30,15 +30,16 @@ approval for layout alignment first.
    and run read-only checks where the criterion names one. Do not
    change the work to make a criterion pass.
 2. Show each criterion as met with its evidence, unmet, or
-   unverifiable with the reason. The user may supply evidence for an
-   unverifiable criterion.
+   unverifiable with the reason. Missing evidence for an unverifiable
+   criterion may be supplied.
 3. If any criterion remains unmet or unverifiable, do not close the
-   task. Offer to leave it open or to register a follow-up issue for
-   the gap.
-4. When every criterion is met, ask the user to confirm completion.
-   Only on confirmation:
-   1. Append this section to the task, leaving the rest unchanged
-      (omit `Confirmed by` in solo mode):
+   task. Leave it open or register a follow-up issue for the gap, as the
+   mode sections describe.
+4. When every criterion is met, completion needs confirmation, as the
+   mode sections describe. Only on confirmation:
+   1. Append this section to the task, leaving the rest unchanged. Use
+      `**Confirmed by:** AI (delegated)` when the agent confirms under
+      AI-driven delegation; otherwise omit `Confirmed by` in solo mode:
 
       ```md
       ## Completion
@@ -56,18 +57,30 @@ approval for layout alignment first.
 5. Share the change through the project's shared store. Sharing outside
    the local workspace requires the user's approval.
 
-## AI-driven mode
-
-Gather evidence and state your assessment. Only the stakeholder
-confirms completion; the gate stays.
-
 ## Exit Gate
 
 The task is in `tasks/closed/` with a Completion section and roadmap
 progress recorded, or it remains in `tasks/` with the reason stated.
-Never claim completion without the user's confirmation.
+Never claim completion without confirmation.
 
 ## Transition
 
-Offer to complete another finished task, register a follow-up issue
-through `raise-issue`, or return to `work-on-project`.
+Next: complete another finished task, register a follow-up issue through
+`raise-issue`, or return to `work-on-project`.
+
+## User-driven mode
+
+1. Show the assessment of each criterion. The user may supply evidence
+   for unverifiable criteria and chooses whether a gap leaves the task
+   open or becomes a follow-up issue.
+2. Only the user confirms completion.
+
+## AI-driven mode
+
+1. Gather evidence and assess each criterion. When every criterion is
+   met with evidence, confirm completion yourself and record `Confirmed
+   by: AI (delegated)`.
+2. Register follow-up issues for gaps yourself. Ask the stakeholder only
+   for evidence that only they can supply.
+3. If completing the task fulfils a milestone's criteria, the milestone
+   becomes ready for a demo; confirming it is reserved for the stakeholder.
