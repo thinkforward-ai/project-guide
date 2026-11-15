@@ -2,7 +2,7 @@
 
 This file contains only unresolved issues that currently require investigation or a decision.
 
-**Next question ID:** Q28
+**Next question ID:** Q29
 
 ## Q1: Input file organization
 
@@ -509,3 +509,31 @@ Raised from the ninetiles project by its Project manager role. It counts as opin
 2. **Keep execution out of core; projects describe their own execution:** Each project defines how tasks are carried out.
    - **Pros:** The core stays small, as currently scoped.
    - **Cons:** Process rules would scatter into projects, against Project Guide being the single source of process, and execution would stay untraced.
+
+## Q28: Relative links inside a task moved to tasks/closed/
+
+### Question
+
+Should `complete-task` also adjust the relative links inside a task when it moves the task to `tasks/closed/`?
+
+### Why It Matters
+
+`complete-task` updates links that point to the moved task, but the task's own links (for example `../decisions/...`) break because the file is one folder deeper. Closed tasks then lose their trace to decisions and the roadmap.
+
+### Context
+
+Raised from the ninetiles project by its Project manager role. It counts as opinion here, under the [role scope boundary](decisions/20261115-1929-role-scope-boundary.md). In ninetiles, three closed tasks had broken decision links until they were fixed by hand. Related to the [complete-task decision](decisions/20261019-2137-complete-task-skill.md), which says the task moves unchanged apart from the appended Completion section.
+
+### Resolution Points
+
+- ❓ **Link adjustment**
+  - **Resolution:** Pending
+  - **Details:** Whether adjusting relative links counts as part of "unchanged", or whether tasks should use links that stay valid after the move.
+
+### Proposals
+
+**Problem:** Moving a task one folder deeper breaks its relative links.
+
+1. **Adjust relative links on the move:** `complete-task` rewrites the task's relative links so they still resolve from `tasks/closed/`, and treats this as part of moving it unchanged.
+   - **Pros:** Closed tasks keep a working trace with no change to how tasks are written.
+   - **Cons:** It is one more mechanical step, and it conflicts with the wording "unchanged" unless that is clarified.
