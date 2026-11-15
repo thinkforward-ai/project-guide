@@ -41,8 +41,9 @@ requirement. Until the user states a driving mode, follow user-driven mode.
    as settled facts. If the user already stated the mode or driving mode,
    record it. In team or organization mode, propose the roles to add to a
    Roles subsection of the Collaboration section: the stakeholder plus the
-   roles from the [starter catalogue](../glossary/roles-catalogue.md) that
-   the idea evidently needs, adapted to the project. For needed expertise
+   roles from the starter role catalogue (`roles-catalogue.md` in the
+   Project Guide glossary skill) that the idea evidently needs, adapted to
+   the project. For needed expertise
    the catalogue lacks, as in a domain new to the framework, define the
    role from scratch with the same fields. The roster may define new
    roles or redefine catalogue roles. Initialize `roadmap.md` in the Roadmap Format with no milestones yet, referring
