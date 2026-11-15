@@ -2,7 +2,7 @@
 
 This file contains only unresolved issues that currently require investigation or a decision.
 
-**Next question ID:** Q25
+**Next question ID:** Q26
 
 ## Q1: Input file organization
 
