@@ -154,39 +154,80 @@ Without milestones, progress has no current focus and decisions and tasks cannot
 
 `roadmap.md` was missing when the project was aligned with the current layout (2026-10-10). It now has no milestones and refers to this issue. The collaboration mode moved to Q15 (2026-10-11); its outcome may change milestone order.
 
+The stakeholder requested a team-proposed roadmap on 2026-11-15, including existing capabilities and considering all 19 currently open issues. This authorizes refinement, not milestone adoption or confirmation.
+
+### Expertise
+
+1. **Framework designer:** capability boundaries, useful outcomes, and dependency order.
+2. **Framework guardian:** consistency with accepted decisions, original purpose, and scope.
+3. **Coordinator:** evidence, status, lifecycle dependencies, and issue coverage.
+4. **Stakeholder:** reserved decision on milestone definitions and order, and later milestone confirmation.
+
 ### Resolution Points
 
-- ❓ **Milestones**
-  - **Resolution:** Pending
-  - **Details:** Names, intents, done-when criteria, and order, drawn from `overview.md` and the accepted decisions.
+1. ❓ **Milestones**
+   1. **Resolution:** Pending
+   2. **Details:** Names, intents, done-when criteria, and order, drawn from `overview.md` and the accepted decisions. Only the stakeholder may adopt them.
 
 ### Findings
 
-1. The lifecycle skills (`start-project`, `raise-issue`, `refine`, `decide`, `work-on-project`, `glossary`) and AI-driven mode already exist, backed by six decisions from 2026-10-03 to 2026-10-04.
-2. The remaining gaps cluster into three groups. A single person running a project end to end needs Q1 (input files), Q6 (progress and completion), Q7 (skill prefix) and Q14 (completed tasks). Teams need Q2 (roles), Q3 (input processing) and Q4 (facts). Tool independence needs Q5 (storage).
-3. `overview.md` section 2 puts execution skills and domain packs out of scope for now.
-4. Founder input (2026-10-11): the collaboration is open source (see Q15). Outside contributors could arrive at any time, which may make team readiness more urgent.
-5. Founder ideas (2026-10-11) for sharing updates (Q16), integrations (Q5), a non-terminal interface (Q17), CI (Q18) and a contributing guide (Q19) point to a possible "Open for contributors" milestone. Revisit the proposals before deciding.
-6. The glossary defines a roadmap as naming no issues or tasks (`skills/glossary/SKILL.md`, item 13). Proposals here may cross-reference issues, but the milestones written into `roadmap.md` must state done-when criteria without issue IDs (founder clarification, 2026-10-11).
-7. Q14 was resolved on 2026-10-19 by the [complete-task decision](decisions/20261019-2137-complete-task-skill.md); its implementation remains to be done.
+1. Existing capabilities include all seven source skills, the issue-to-task lifecycle, task-completion checks, both driving modes, expertise-based project roles, guardian review, visible role markers, and read-only skill-update checks during status. These are implementation evidence, not previously accepted or confirmed milestones. See the [lifecycle](decisions/20261003-1603-project-lifecycle-orchestration.md), [task closure](decisions/20261019-2137-complete-task-skill.md), [delegation](decisions/20261115-1809-ai-driven-mode-as-delegation.md), [roles](decisions/20261115-1850-project-roles.md), [consistency and guardian](decisions/20261115-1921-framework-consistency-and-guardian.md), and [role visibility](decisions/20261115-2042-visible-role-markers-and-coordinator.md) decisions.
+2. The read-only audit on 2026-11-15 compared the then-19 open issues with 14 decision records, seven source skills, and eight unclosed task records. Each retained an unresolved part at that time; Q22 has since been resolved by the decision below. Several task criteria have since been superseded; feature presence alone does not establish task completion.
+3. The earlier findings were stale: Q2 and Q14 are resolved, and the task-closure skill is implemented. The earlier proposal's "M1 achieved" was never an accepted milestone or stakeholder confirmation.
+4. The [project-level driving-mode decision](decisions/20261115-2146-project-guide-ai-driven-mode.md) makes this project AI-driven. The later [required milestone demos and confirmation decision](decisions/20261115-2330-required-milestone-demos-and-confirmation.md) resolves Q22 across all modes: meeting criteria makes a milestone ready for a demo; achievement requires an evidence-backed demo followed by explicit human stakeholder confirmation.
+5. The glossary defines a roadmap as naming no issues or tasks. Keep the issue mapping below with this proposal; if adopted, write outcome criteria and progress logs, not issue IDs or task lists, into `roadmap.md`.
+6. Q15 remains parked until the stakeholder explicitly reopens it. It may be shown as a dependency of a future milestone, but roadmap acceptance must not reopen it or certify repository permissions. The existing provisional roster remains in force meanwhile.
+7. Execution-skill design is out of scope under `overview.md` section 2. Q27 challenges that boundary, and Q17 may expand the framework into an interface. Both need separate stakeholder scope decisions before delivery commitments. No technology, external action, installation, or invitation is authorized by a roadmap.
+8. The three earlier unaccepted drafts (capability layers, a single core milestone, and self-use followed by external use) are consolidated into the single updated proposal below. It retains existing capability recognition, capability-based sequencing, and evidence from actual use, without their stale issue groupings or unsupported achievement claim.
+9. Stakeholder requirement (2026-11-15): when a milestone's outcome cannot be run or directly shown, prepare and deliver its demo/presentation as HTML slides. Runnable or directly showable outcomes may use a direct demonstration. This requirement is now part of the linked Q22 decision; neither that decision nor this proposal adopts the roadmap or confirms a milestone.
 
 ### Proposals
 
-**Problem:** Project Guide has no milestones, so progress has no current focus and decisions and tasks can't be tracked against the goal in `overview.md`.
+**Problem:** Project Guide needs an outcome-based roadmap that recognizes what already exists, orders the remaining capabilities, and accounts for every open issue without silently settling its design or expanding scope.
 
-1. **Capability layers:** Four milestones, each one widening who can use the framework.
-   1. M1 Core lifecycle (achieved): issues move from registration through refinement and decision to tasks, through gated skills, in either driving mode.
-   2. M2 Solo-ready: one person can run a project end to end, including input files, roadmap progress, completion and task closure (Q1, Q6, Q7, Q14).
-   3. M3 Team-ready: roles, expertise, bias, input processing and facts work for several contributors (Q2, Q3, Q4).
-   4. M4 Tool-independent: the process runs on at least one store besides Git (Q5).
-   - **Pros:** It matches the existing issue clusters, so every open issue maps to a milestone. Each milestone gives a usable result, and M2 makes the next focus small and concrete. It keeps domain packs out, as `overview.md` section 2 says.
-   - **Cons:** M1 is recorded after the fact. M3 is large, and Q2 to Q4 depend on one another. Execution and domain packs get no milestone, so they need a later decision to change the roadmap.
-2. **Single core milestone:** One milestone, "Core framework complete", done when Q1 to Q7 and Q14 are resolved and the skills reflect the decisions.
-   - **Pros:** It's the simplest to keep current, with no ordering debates.
-   - **Cons:** There's no intermediate usable result. The current focus stays the same for the whole project, so roadmap progress shows little, and it duplicates `open-issues.md`.
-3. **Dogfood then external:** M1 Self-hosted, where Project Guide runs its own development with all solo gaps closed (Q1, Q6, Q7, Q14). M2 First external project, where one real project outside this repository runs from `start-project` to ready tasks, and the gaps it reveals are raised. Team and storage issues (Q2 to Q5) stay unassigned until evidence places them.
-   - **Pros:** Milestones come from real use, not from a design guess. It surfaces gaps the open issues don't yet cover.
-   - **Cons:** It depends on finding a suitable external project. Q2 to Q5 have no milestone, so the roadmap doesn't show team or storage readiness.
+1. **Evidence-led capability roadmap (recommended):** Five milestones in intended order, followed by two conditional future directions. The order guides focus, not a blanket ban on independent later work. Every milestone needs an evidence-backed demo and stakeholder confirmation before it is achieved. Use a direct demonstration when the outcome can be run or directly shown; otherwise prepare and deliver the demo/presentation as HTML slides. This format requirement applies to every milestone demo below and does not replace evidence or confirmation. Each receives a one-line progress log when adopted; no milestone is confirmed by accepting this proposal.
+   1. **M1. Lifecycle foundations**
+      1. **Intent:** Recognize and demonstrate the framework already built, without claiming its known reliability gaps are solved.
+      2. **Starting evidence:** All seven source skills, driving modes, roles, guardian, role visibility, and status update checks exist. Formal milestone review and confirmation have not happened.
+      3. **Done when:** The seven skills and their shared contract, authority rules, and mode boundaries are present; an evidence-backed walkthrough shows bootstrap, registration, refinement, decision-linked task preparation, completion checks, and resumption; the evidence distinguishes implemented capabilities, known gaps, and unclosed or superseded task criteria.
+      4. **Demo:** Walk through existing source skills and project records, explicitly disclosing remaining gaps rather than inventing a completed end-to-end run.
+   2. **M2. Dependable project records**
+      1. **Intent:** Make the durable project state trustworthy across phases, sessions, installations, and task closure.
+      2. **Starting evidence:** Decisions and the overview already preserve settled understanding; phase routing and task closure exist, but record timing, durable-definition handling, reference portability, and moved-task links have unresolved gaps.
+      3. **Done when:** Phase execution and record-timing rules are explicit and demonstrably followed; accepted changes keep the chosen durable definitions current and proposals are checked against them; task closure preserves valid incoming and internal trace links; project/skill naming is settled and cross-skill/resource references remain usable under the supported installation naming conventions.
+      4. **Demo:** Resume from project files without session history, trace one accepted change into the current definition, and close a sample task while preserving its links and evidence.
+   3. **M3. Trustworthy research and readiness**
+      1. **Intent:** Turn uncertain input into a justified, implementation-ready description with visible remaining unknowns.
+      2. **Starting evidence:** Input preservation, expertise-based opinion classification, role verdicts, and roadmap/status structure exist. The linked Q22 decision now requires demos and explicit human stakeholder confirmation across all modes. Detailed input organization, processing responsibility, fact policy, and research-readiness measures remain open.
+      3. **Done when:** Input organization and required/optional material are defined; classification, bias checks, contradiction handling, and human/AI responsibilities are explicit; establishing and challenging facts has a policy; explored/unknown areas and implementation blockers are visible; milestone completion and demo rules are unambiguous across supported collaboration and driving modes.
+      4. **Demo:** Process conflicting input into a reviewed decision and ready instruction, show what remains unknown and why it does or does not block implementation, and demonstrate the applicable milestone-confirmation rule.
+   4. **M4. Tool-independent shared work**
+      1. **Intent:** Let contributors find project services and exchange changes without making the core depend on Git.
+      2. **Starting evidence:** The framework separates its model from storage and includes sharing instructions; per-project integration configuration and synchronization/conflict workflows remain undefined.
+      3. **Done when:** Integration purposes, configuration, service contracts, and setup responsibility are defined; a store-independent sharing flow and a Git adapter handle synchronization, file conflicts, and logical contradictions without silently rewriting settled meaning; the same lifecycle is demonstrated using Git and one separately approved non-Git store.
+      4. **Demo:** Exchange concurrent changes, surface a logical conflict as an issue, and show equivalent durable project state on the two stores.
+   5. **M5. Contributor-ready framework**
+      1. **Intent:** Make participation understandable, governed, checked, and capable of feeding reusable roles back into the framework.
+      2. **Starting evidence:** Open-source licensing and a provisional role roster exist. Collaboration governance, authenticated permission verification, CI, contribution guidance, and catalogue feedback remain open.
+      3. **Done when:** Collaboration, membership, decision authority, and outside-input rules are accepted and documented; an authenticated access audit verifies public-read/member-write requirements and discloses inherited administrative authority and enforcement limits; the selected CI checks run; contributor guidance covers setup through accepted changes; a role-feedback policy names collection, acceptance authority, and reuse evidence.
+      4. **Demo:** Walk through an outside contribution and a member contribution using an authorized example or controlled exercise, show accepted/rejected check results and access-audit evidence, and review a candidate role through the agreed feedback policy.
+      5. **Dependency:** Governance and access work stay blocked while the stakeholder keeps that subject parked. Other independent preparation may proceed; no contributor invitation or external settings change is implied.
+   6. **Conditional future: accessible, non-terminal use**
+      1. Investigate feasibility and build/adopt options. Only after a separate stakeholder scope/platform decision would delivery become a milestone, with criteria for a non-technical user to complete the selected lifecycle without a terminal and for any approved connectors or views.
+   7. **Conditional future: traced task execution**
+      1. Decide separately whether execution pickup belongs in core or remains outside it. Only an accepted scope change would add a delivery milestone covering ready-task selection, scoped execution, design-question escalation, evidence, and closure handoff. Keeping execution outside core is still a valid outcome.
+   8. **Issue coverage (proposal rationale only, not roadmap content):**
+      1. M1 recognizes previously delivered capabilities, including the resolved role and task-closure work; it closes no currently open issue merely by naming that work.
+      2. M2: Q7, Q21, Q26, Q28, Q29.
+      3. M3: Q1, Q3, Q4, Q6. Resolved Q22 contributes the settled demo-and-confirmation rule; it is no longer open work.
+      4. M4: Q5, Q16. Its logical-conflict handling uses the research policies developed in M3.
+      5. M5: Q15 (still parked), Q18, Q19, Q24. It uses the naming, reference, and sharing outcomes developed earlier.
+      6. Conditional directions: Q17 and Q27, without accepting either delivery proposal.
+      7. Q13 is resolved only if the stakeholder adopts a roadmap through the decision phase. This accounts for all 18 remaining open issues and the resolved Q22 contribution without treating milestone adoption as their resolution.
+   9. **Focus and progress:** If adopted, first review and demo M1; do not label it achieved retrospectively. M2 is the next capability focus after confirmation. Record only evidence-backed progress, with no invented completion percentages, dates, or prior approvals. Technology choices and external actions keep their separate authorization requirements.
+   10. **Pros:** Recognizes existing work honestly, addresses every open issue, repairs traceability before scaling collaboration, and measures usable outcomes rather than issue counts. Allows independent preparation without reopening parked work.
+   11. **Cons:** Five milestones require more maintenance than a single finish line; M3 is substantial; the second-store demonstration needs separately approved platform/access choices; M5 cannot finish while governance is parked. The two scope-sensitive directions have no delivery commitment or date.
+   12. **Verdicts:** Framework designer: no concern; capability boundaries and order are coherent, with a known bias toward richer structure and the explicit trade-off that M3 remains substantial. Framework guardian: no concern with recording/presenting this proposal, conditional on no unsupported achievement claims, no reopening Q15, no implicit scope expansion, no preselection of unresolved issue solutions, and keeping issue IDs outside the adopted roadmap; all conditions are incorporated. The HTML-slide amendment and required confirmation now follow the separate accepted Q22 decision without adopting this roadmap. Coordinator: no concern; all 18 remaining issues and the resolved Q22 contribution are accounted for, evidence and dependencies are explicit, and adoption remains a stakeholder decision.
 
 ## Q15: Open-source collaboration mode
 
