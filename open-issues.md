@@ -2,7 +2,7 @@
 
 This file contains only unresolved issues that currently require investigation or a decision.
 
-**Next question ID:** Q27
+**Next question ID:** Q28
 
 ## Q1: Input file organization
 
@@ -472,3 +472,40 @@ Raised from the ninetiles project by its Project manager role. It counts as opin
 1. **Phases are the backbone:** State in the AI-driven sections and the glossary that delegation removes waiting for the stakeholder, not phases. Each phase runs through its skill, and its records are written and shared as that phase completes. Records are the source of truth; a session is a temporary work process. Remove "records may be written when a burst of work ends".
    - **Pros:** Records stay true and complete, and the trace never depends on a session surviving. It costs no stakeholder time.
    - **Cons:** It adds a few record writes per feature.
+
+## Q27: A skill that picks up and executes ready tasks
+
+### Question
+
+Should Project Guide's core include a domain-neutral skill that picks up a ready task and carries it out, between task creation and `complete-task`?
+
+### Why It Matters
+
+The lifecycle stops when a task is created. `decide` creates tasks and `complete-task` closes them, but nothing defines who picks up a task, when, how the work stays within its scope, or how evidence is recorded for closure. In practice the work happens spontaneously, outside the framework's trace, which conflicts with records being the source of truth.
+
+### Context
+
+Raised from the ninetiles project by its Project manager role. It counts as opinion here, under the [role scope boundary](decisions/20261115-1929-role-scope-boundary.md). The ninetiles stakeholder observed: "implementation went well - however do we have any skill doing actual work and picking up the task? So far it feels framework stops on task creation. The rest goes spontaneously." This challenges `overview.md` section 2, which puts the design of execution skills out of scope for now and keeps execution optional and domain-specific. Related to the [complete-task decision](decisions/20261019-2137-complete-task-skill.md), which treats recording completion as core upkeep rather than execution, and to Q26 (every phase runs through its skill).
+
+### Resolution Points
+
+- ❓ **Scope**
+  - **Resolution:** Pending
+  - **Details:** Whether picking up and carrying out a task is core and domain-neutral, or stays with domain packs.
+- ❓ **Pickup**
+  - **Resolution:** Pending
+  - **Details:** How a task is chosen: ready, dependencies complete, prerequisites available, and in which order.
+- ❓ **Execution rules**
+  - **Resolution:** Pending
+  - **Details:** Who executes (the role whose expertise the task requires), staying within the task's scope, what happens when a design question appears, and how evidence is recorded for `complete-task`.
+
+### Proposals
+
+**Problem:** No skill covers the work between a ready task and its closure.
+
+1. **Core `work-on-task` skill (domain-neutral):** It picks a ready task (dependencies complete, prerequisites verified) and has the role whose expertise the task requires carry out its **How** steps, staying strictly within the task's scope. If the work reveals a design question, it stops and raises an issue rather than deciding inline. It records evidence for each acceptance criterion in the task and hands off to `complete-task`. Domain packs may add domain-specific practices, such as tests or builds, on top. User-driven mode: the user chooses which task to start. AI-driven mode: the agent picks the next ready task itself, in roadmap order.
+   - **Pros:** It closes the lifecycle gap and keeps execution traced from task to evidence to closure, while staying domain-neutral.
+   - **Cons:** It reopens a settled scope boundary, and domain-neutral rules may be too thin for some domains until packs exist.
+2. **Keep execution out of core; projects describe their own execution:** Each project defines how tasks are carried out.
+   - **Pros:** The core stays small, as currently scoped.
+   - **Cons:** Process rules would scatter into projects, against Project Guide being the single source of process, and execution would stay untraced.
