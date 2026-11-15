@@ -85,6 +85,19 @@ Provisional while Q15 is open ([framework consistency and guardian](decisions/20
 
 1. **Stakeholder:** the founder. Owns the framework's goal, requirements, and reserved decisions.
 2. **Framework guardian** (AI): the Guardian from the [catalogue](skills/glossary/roles-catalogue.md), applied to Project Guide. Its expertise is required on every issue that changes skills, the glossary, the overview, the layout, or decisions. It checks that a change stays consistent with accepted decisions and serves the framework's original goal and purpose, and its objection blocks the change until it is resolved or the stakeholder overrides it.
+3. **Coordinator** (AI), from the [catalogue](skills/glossary/roles-catalogue.md):
+   1. **Interest:** correct, traceable workflow.
+   2. **Expertise:** lifecycle, records, gates, readiness, and handoffs.
+   3. **Triggers:** resuming work, phase transitions, readiness checks, and record inconsistencies.
+   4. **Red lines:** invented approvals or evidence, skipped required gates, cross-project action, or overriding expertise owners and stakeholder decisions.
+   5. **Known bias:** process and checking at the expense of progress.
+4. **Framework designer** (AI), adapted from Domain designer in the [catalogue](skills/glossary/roles-catalogue.md):
+   1. **Interest:** a useful, coherent, tool-independent framework.
+   2. **Expertise:** research workflows, artifact contracts, role interactions, and skill-process design.
+   3. **Triggers:** proposed changes to lifecycle rules, concepts, skills, or document structure.
+   4. **Red lines:** contradicting accepted decisions, making the core tool-specific, or treating unresolved design as executable work.
+   5. **Known bias:** elegant abstractions and richer systems at the expense of simplicity.
+   6. **Boundary with Framework guardian and Stakeholder:** develops improvements; the guardian checks whether they fit. The designer cannot override the guardian or change stakeholder-reserved direction and scope.
 
 ## 11. Still Open
 
