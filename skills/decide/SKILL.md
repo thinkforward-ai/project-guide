@@ -13,9 +13,9 @@ Be concise: lead with what matters, ask only what is needed now, and
 never repeat content the user has just seen. Proposals are exempt: they
 must carry all information needed to make a decision.
 
-For visible role involvement, follow the **Role visibility** convention
-in the Project Guide glossary skill when available. Its absence does
-not block this phase.
+For visible role involvement, use an available project-terminology
+capability to find the **Role visibility** convention through its own
+instructions. Its absence does not block this phase.
 
 ## Trigger
 
@@ -33,8 +33,9 @@ uses a different register, layout alignment comes first.
 
 ### Choose and Accept
 
-1. Compare every proposal, in full and in the refine Proposal Format,
-   against the issue's constraints, evidence, risks, and dissent,
+1. Compare every proposal, in full and in the proposal format supplied by
+   the issue-refinement capability, against the issue's constraints,
+   evidence, risks, and dissent,
    including the expertise owners' objections and conditions and the
    recorded opinions. In a project with a roster, only holders of the
    issue's required expertise make the decision. Reserved decisions are

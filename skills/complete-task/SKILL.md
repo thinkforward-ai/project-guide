@@ -12,14 +12,14 @@ the task here.
 Be concise: lead with what matters, ask only what is needed now, and
 never repeat content the user has just seen.
 
-For visible role involvement, follow the **Role visibility** convention
-in the Project Guide glossary skill when available. Its absence does
-not block this phase.
+For visible role involvement, use an available project-terminology
+capability to find the **Role visibility** convention through its own
+instructions. Its absence does not block this phase.
 
 ## Trigger
 
-Someone reports a task done, or chooses **complete a task** in
-`work-on-project`.
+Someone reports a task done, or chooses **complete a task** while
+coordinating project work.
 
 ## Entry Gate
 
@@ -60,7 +60,8 @@ alignment comes first.
    2. Move the file to `tasks/closed/` under the same name and update
       links to its old path.
    3. Add the roadmap progress entry and mark satisfied milestone
-      criteria `✅`, as `work-on-project` describes.
+      criteria `✅`, following the milestone-progress rules from an
+      available project-work coordination capability.
 5. Share the change through the project's shared store. Sharing outside
    the local workspace requires the user's approval.
 
@@ -72,8 +73,9 @@ Never claim completion without confirmation.
 
 ## Transition
 
-Next: complete another finished task, register a follow-up issue through
-`raise-issue`, or return to `work-on-project`.
+Next: complete another finished task, use an available issue-registration
+capability for a follow-up, or return to an available project-work
+coordination capability.
 
 ## User-driven mode
 

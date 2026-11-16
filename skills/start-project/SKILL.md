@@ -12,9 +12,9 @@ Be concise: lead with what matters, ask only what is needed now, and
 never repeat content the user has just seen. Proposals are exempt: they
 must carry all information needed to make a decision.
 
-For visible role involvement, follow the **Role visibility** convention
-in the Project Guide glossary skill when available. Its absence does
-not block this phase.
+For visible role involvement, use an available project-terminology
+capability to find the **Role visibility** convention through its own
+instructions. Its absence does not block this phase.
 
 ## Trigger
 
@@ -45,9 +45,9 @@ requirement. Until the user states a driving mode, follow user-driven mode.
    as settled facts. If the user already stated the mode or driving mode,
    record it. In team or organization mode, propose the roles to add to a
    Roles subsection of the Collaboration section: the stakeholder plus the
-   roles from the starter role catalogue (`roles-catalogue.md` in the
-   Project Guide glossary skill) that the idea evidently needs, adapted to
-   the project. For needed expertise
+   roles the idea evidently needs from an available starter role catalogue,
+   adapted to the project. Identify a matching provider by description and
+   follow its instructions to locate the catalogue. For needed expertise
    the catalogue lacks, as in a domain new to the framework, define the
    role from scratch with the same fields. The roster may define new
    roles or redefine catalogue roles. Initialize `roadmap.md` in the Roadmap Format with no milestones yet, referring

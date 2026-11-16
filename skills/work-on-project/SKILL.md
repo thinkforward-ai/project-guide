@@ -16,9 +16,9 @@ Be concise: lead with what matters, ask only what is needed now, and
 never repeat content the user has just seen. Proposals are exempt: they
 must carry all information needed to make a decision.
 
-For visible role involvement, follow the **Role visibility** convention
-in the Project Guide glossary skill when available. Its absence does
-not block this phase.
+For visible role involvement, use an available project-terminology
+capability to find the **Role visibility** convention through its own
+instructions. Its absence does not block this phase.
 
 ## Trigger
 
@@ -32,9 +32,9 @@ Locate the intended project from the current context or ask which one the
 user means; do not assume among multiple projects. When opening or resuming
 an existing project, inspect its artifacts before routing lifecycle work.
 If no project exists and a new goal was supplied, bootstrap it. When an
-optional Project Guide glossary skill is installed, read its main terms and
-check them internally before starting or resuming. Its absence does not
-block progress or require a user-facing recitation.
+available capability provides project terminology, read its definitions
+and check them internally before starting or resuming. Its absence does
+not block progress or require a user-facing recitation.
 
 ## Work
 
@@ -76,8 +76,8 @@ block progress or require a user-facing recitation.
    is named, the next action comes from the applicable choices:
    **show current status** first, **refine an open issue**, **decide an
    issue with ready proposals**, **work on a ready task**, **complete a
-   task** when one looks finished (through `complete-task`; never move
-   tasks here),
+   task** when one looks finished (through an available task-completion
+   capability; never move tasks here),
    **provide input or an idea**, or **pause**. Show full status only when
    requested or chosen: roadmap **Current focus** (the current milestone
    in full) and **Next** (name and one-line intent, never later

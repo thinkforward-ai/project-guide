@@ -16,9 +16,9 @@ Be concise: lead with what matters, ask only what is needed now, and
 never repeat content the user has just seen. Proposals are exempt: they
 must carry all information needed to make a decision.
 
-For visible role involvement, follow the **Role visibility** convention
-in the Project Guide glossary skill when available. Its absence does
-not block this phase.
+For visible role involvement, use an available project-terminology
+capability to find the **Role visibility** convention through its own
+instructions. Its absence does not block this phase.
 
 ## Trigger
 
